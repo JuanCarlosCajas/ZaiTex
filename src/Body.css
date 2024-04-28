@@ -1,0 +1,59 @@
+:root{
+    --blue : #1962EC;
+}
+
+.cuerpo-contenedor{
+    width: 120%;
+    height: 1450px;
+    position: absolute;
+    z-index: -1;
+    right: -100px;
+    top: -20px;
+    opacity: 0.6;
+}
+
+.Z-logo{
+    position: absolute;
+    left: -1%;/* -6.15rem */
+    margin-left: -140px ;/* -20%*/
+    margin-top: 48px;
+    top: 420px; /*12.4rem*/
+    width: 860px;/* 143.6%  calc(110% + 130px) calc(179px + 100%)*/
+    height: 290px;
+    background-color: var(--blue);
+    z-index: 6;
+    transform: rotate(135deg);
+    border-radius: 80px;
+}
+
+.Z-logo::before{
+    content: "";
+    position: absolute;
+    top: 197px;
+    left: -51px;
+    margin-left: -99px;
+    width: 700px;
+    height: 290px;
+    background-color: var(--blue);
+    transform: rotate(45deg);
+    z-index: 6;
+    border-top-left-radius: 45px;
+}
+
+.persona-1{
+    position: relative;
+    top: 120px;
+    z-index: 7;
+    width: 45%;
+}
+
+.beneficios-contenedor{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    margin-top: 116px;
+    left: -8%;
+    width: 110%;
+    height: 500px;
+    background-color: white;
+}

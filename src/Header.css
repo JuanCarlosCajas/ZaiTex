@@ -3,84 +3,169 @@
   padding: 0;
   --blue : #1962EC;
 }
-
-.right-wall{
-  position: absolute;
-  background-color: green;
-  width: 70%;
-  height: 100px;
-  z-index: -10;
-  right: -24.6%;
-  border-bottom-left-radius: 75px;
+body{
+  overflow-x: hidden;
 }
 
-.left-wall{
+/* Aqui esta la luna superior */
+.cubridor-header{
   position: absolute;
-  background-color: red;
-  width: 70%;
-  height: 100px;
-  z-index: -10;
-  left: -22.5%;
-  border-bottom-right-radius: 75px;
+  top: 15px;
+  width: 130px;
+  height: 130px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -moz-box-shadow: 30px 10px 0 #d9534f;
+  -webkit-box-shadow: 30px 10px 0 #d9534f;
+  box-shadow: 30px 60px 0 10px #d9534f;
+  right: 48.39%; /* 48.39% */
+  z-index: 10;
+  transform: rotate(207deg);
 }
 
 .header-container{
   display: flex;
+  position: fixed;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo-container{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: start;
+  float: left;
+  /*margin: 8px;*/
+  padding-left: 35px;
+  width: 10%;
+}
+
+.logo-zaitex{
+  padding: 15px;
+  width: 100px;
+}
+
+nav{
+  float: right;
+  width: 82%;
 }
 
 .nav-container{
+  position: relative;
   display: flex;
   flex-direction: row;
-  margin-right: 100px;
-  margin-top: 20px;
-  gap: 100px;
+  justify-content: center;
+  float: right;
+  width: 75%; /* 100px */
+  margin-top: 13px;
+  margin-left: 0px; /* 500px */
+  gap: 13%;
+  min-width: 100px;
 }
 
 .nav-container li{
   display: flex;
+  position: relative; /* Cambia esto produce error */
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  /*margin-left: -20px;*/
 }
-/* Circulos que rodea la opciones */
-.nav-container .home-btn::before{
+/* Aqui esta la murallada del header parte izquierda */
+
+.nosotros-btn::before{
   content: "";
   position: absolute;
-  width: 0; 
-  height: 0;
+  top: -21px;
+  height: 115px;
+  width: 600px;
+  margin-right: 1050px;
+  background-color: green;
+  z-index: -1;
+  border-bottom-right-radius: 70px;
+}
+/* Aqui esta la muralla del header parte derecha */
+.nosotros-btn::after{
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: -190px;
+  margin-left: 100px; /* 20.6%*/
+  height: 105px;
+  width: 820px;
+  background-color: white;
+  z-index: -1;
+  border-bottom-left-radius: 70px;
+}
+
+/* Circulos que rodea la opciones */
+.nav-container .activo::before{
+  content: "";
+  position: absolute;
+  width: 90px; 
+  height: 90px;
   border-radius: 50%;
   background-color: #1962EC;
-  top: 20px;
+  top: -8px;
   z-index: -1;
   transition: all 0.2s ease-in;
 }
+
 /* Separación de las 2 paredes */
-.nav-container .home-btn::after{
+.nav-container .activo::after{
   content: "";
   position: absolute;
-  top: 9px;
+  top: -19px;
   width: 115px;
   height: 115px;
   background-color: transparent;
   border: 2px solid black;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
-
+  transition: all 0.5s ease;
 }
 
-.nav-container .home-btn:hover{
-  margin-top: 10px;
+
+.nav-container .activo{
+  margin-top: 25px;
 }
 
-.nav-container .home-btn:hover::before{
-  width: 90px;
-  height: 90px;
-  transition: all 0.2s ease-out;
+.txtInicio{
+  color: #fff;
 }
 
-.logo-zaitex{
-  padding: 10px;
-  width: 90px;
+
+.body-foto{
+  width: 120%;
+  height: 1900px;
+  padding: 0px;
+  margin: 0px;
+  top: -39px;
+  position: absolute;
+  left: -8%;
+  z-index: -20;
+}
+
+.txtNosotros, .txtCursos, .txtTalleres, .txtBiblioteca{
+  color: #1962EC;
+}
+
+@media screen and (min-width: 200px) and (max-width: 752px){
+  .nav-container{
+      width: 100%;
+      margin-right: 0;
+  }
+}
+@media screen and (max-width:750px) and (min-width: 900px){
+  .nav-container{
+      width: 100%;
+      gap: 17%;
+  }
 }
