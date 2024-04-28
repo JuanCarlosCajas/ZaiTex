@@ -3,6 +3,11 @@
   padding: 0;
   --blue : #1962EC;
 }
+
+*{
+  color: var(--blue);
+}
+
 body{
   overflow-x: hidden;
 }

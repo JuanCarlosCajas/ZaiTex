@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import "./Header.css"
+import '../css/Header.css'
 import logo from '/img/zaitex-logo.png'
 
 import casaActivo from '/img/home-activo.svg'
