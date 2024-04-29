@@ -1,30 +1,37 @@
 
 .beneficio{
     position: relative;
-    width: 350px;
-    height: 300px;
+    align-items: center;
+    width: 290px;
+    height: 250px;
     background-color: var(--blue);
     border-radius: 20px;
+    margin-bottom: 50px;
+    margin-top: 21px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .beneficio .imagen-beneficio{
     position: relative;
-    top: -35px;
-    padding-left: 40px;
+    /*top: -42px;*/
+    transform: translateY(-58%);
+    padding-left: 16px;
     z-index: 20;
 }
-
+/* Borde invisible de la cabecera beneficio */
 .beneficio::after{
     content: "";
     position: absolute;
     left: -20px;
     top: -85px;
-    width: 165px;
-    height: 165px;
+    width: 145px;
+    height: 145px;
     border-radius: 50%;
     background-color: #fff;
 }
 
+/* Background del icono del beneficio */
 .beneficio::before{
     content: "";
     position: absolute;
@@ -32,8 +39,8 @@
     top: -60px;
     right: 0;
     bottom: 0;
-    width: 130px;
-    height: 130px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     background-color: var(--blue);
     z-index: 10;
@@ -41,7 +48,10 @@
 }
 
 .beneficio p{
-    font-size: 20px;
-    text-align: center;
+    position: absolute;
+    font-size: 18px;
     color: #fff;
+    transform: translateY(-10%);
+    text-align: justify;
+    margin-right: 20px;
 }

@@ -5,6 +5,9 @@ import { CartaBeneficios } from '../components/CartaBeneficios'
 import primerBeneficio from '../img/primerBeneficio.png'
 import segundoBeneficio from '../img/segundoBeneficio.png'
 import tercerBeneficio from '../img/tercerBeneficio.png'
+import cuartoBeneficio from '../img/cuartoBeneficio.png'
+import { Ofrecemos } from '../components/Ofrecemos'
+import { Footer } from '../components/Footer'
 
 export function Body(){
 
@@ -41,8 +44,46 @@ export function Body(){
                     desarrollar tus habilidades."
                     tipo="blue"
                     />
+                    <CartaBeneficios src={cuartoBeneficio} 
+                    texto="Contamos con un equipo de
+                    instructores altamente
+                    calificados y apasionados en
+                    sus respectivos campos."
+                    tipo="estudiante"
+                    />
                 </section>
+                <h1>Que ofrecemos</h1>
             </div>
+            <section className='list-ofre-container'>
+                <Ofrecemos
+                titulo="Cursos"
+                texto="Un programa virtual especializado para
+                ejecutivos, diseñado para desarrollar
+                habilidades y conocimientos de manera
+                eficiente en poco tiempo."
+                color="#FFDEB8"
+                />
+                <Ofrecemos 
+                titulo="Diplomados"
+                texto="Sumérgete en cursos breves, diseñados
+                para un aprendizaje práctico y rápido,
+                impulsando tus habilidades para destacar
+                en tu carrera."
+                color="#D9D9D9"
+                />
+                <Ofrecemos 
+                titulo="Programas"
+                texto="Sumérgete en nuestro programa virtual
+                especializado, diseñado para ejecutivos
+                ambiciosos que desean dominar un área
+                específica en tan solo 12 meses."
+                color="#FFAEAE"
+                />
+            </section>
+            <div className="proximamente">
+                <h1 style={{color: 'white'}}>Eventos</h1>
+            </div>
+            <Footer modo="completo" />
         </>
     )
 }

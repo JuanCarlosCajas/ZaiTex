@@ -4,11 +4,8 @@
   --blue : #1962EC;
 }
 
-*{
-  color: var(--blue);
-}
-
 body{
+  color: var(--blue);
   overflow-x: hidden;
 }
 
@@ -132,7 +129,6 @@ nav{
   width: 115px;
   height: 115px;
   background-color: transparent;
-  border: 2px solid black;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   transition: all 0.5s ease;

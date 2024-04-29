@@ -1,0 +1,12 @@
+
+.ofre-container{
+    position: relative;
+    width: 320px;
+    height: 250px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 30px; 
+    line-height: 2;
+    text-align: justify;
+    text-wrap: wrap;
+}
