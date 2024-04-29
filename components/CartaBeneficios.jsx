@@ -9,7 +9,7 @@ export function CartaBeneficios(parametros){
             marginTop: '0px',
         }
         const estiloTexto = {
-            paddingTop: '25px'
+            paddingTop: '26px'
         }
 
         return(
@@ -22,7 +22,7 @@ export function CartaBeneficios(parametros){
     else if(parametros.tipo == "caballo"){
 
         const estiloTexto = {
-            paddingTop: '0px',
+            paddingTop: '2px',
         }
 
         return(
@@ -35,11 +35,11 @@ export function CartaBeneficios(parametros){
     else if(parametros.tipo == "blue"){
         const estiloImagen = {
             paddingLeft: '5px',
-            paddingTop: '0px'
+            paddingTop: '10px'
         }
 
         const estiloTexto = {
-            paddingTop: '19px'
+            paddingTop: '15px'
         }
         return(
             <div className='beneficio'>
@@ -55,7 +55,7 @@ export function CartaBeneficios(parametros){
         }
 
         const estiloTexto = {
-            paddingTop: '26px'
+            paddingTop: '33px'
         }
         return(
             <div className='beneficio'>

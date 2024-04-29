@@ -29,4 +29,15 @@ export function Footer(props){
             </>
         )
     }
+    else if(props.modo == "medio"){
+        return (
+            <>
+                <footer className='footer-container'>
+                    <section className='copyright'>
+                        <p>Copyright © ZAI-TEX 2022 Todos los Derechos Reservados</p>
+                    </section>
+                </footer>
+            </>
+        )
+    }
 }
