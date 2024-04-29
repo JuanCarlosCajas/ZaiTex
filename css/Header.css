@@ -83,23 +83,24 @@ nav{
 }
 /* Aqui esta la murallada del header parte izquierda */
 
-.nosotros-btn::before{
+.about-btn::before{
   content: "";
   position: absolute;
-  top: -21px;
+  top: -20px;
+  left: -800px;
   height: 115px;
   width: 600px;
-  margin-right: 1050px;
-  background-color: green;
+  margin-right: 50px;
+  background-color: white;
   z-index: -1;
   border-bottom-right-radius: 70px;
 }
 /* Aqui esta la muralla del header parte derecha */
-.nosotros-btn::after{
+.about-btn::after{
   content: "";
   position: absolute;
   top: -11px;
-  left: -190px;
+  left: -180px;
   margin-left: 100px; /* 20.6%*/
   height: 105px;
   width: 820px;
