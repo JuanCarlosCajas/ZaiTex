@@ -4,6 +4,8 @@ import { Body } from './Body'
 import { Inicio } from './routes/Inicio'
 import { Nosotros } from './routes/Nosotros'
 import { Cursos } from './routes/Cursos'
+import { Talleres } from './routes/Talleres'
+import { Biblioteca } from './routes/Biblioteca'
 
 function App() {
 
@@ -13,10 +15,12 @@ function App() {
       {/*<Body/>*/}
 
       <Routes>
-        <Route path='/Zaitex' element={ <Inicio/> }></Route>
-        <Route path='/Zaitex/nosotros' element={ <Nosotros/> }></Route>
-        <Route path='/Zaitex/cursos' element={ <Cursos/> }></Route>
-        <Route path='/Zaitex/*' element={ <Navigate to='/Zaitex'/> }></Route>
+        <Route path='/' element={ <Inicio/> }></Route>
+        <Route path='/nosotros' element={ <Nosotros/> }></Route>
+        <Route path='/cursos' element={ <Cursos/> }></Route>
+        <Route path='/talleres' element={ <Talleres/> }></Route>
+        <Route path='/biblioteca' element={ <Biblioteca/> }></Route>
+        <Route path="/*" element={ <Navigate to='/'/> }></Route>
       </Routes>
     </>
   )

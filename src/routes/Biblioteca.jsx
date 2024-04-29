@@ -1,5 +1,6 @@
-export function Cursos(){
-    console.log("Accediendo a cursos")
+export function Biblioteca(){
+    console.log("Accediendo a Biblioteca")
+
     return(
         <>
             <h1>Hola Mundo</h1>

@@ -16,6 +16,7 @@ import tallerDesactivado from '/img/talleres-desactivado.svg'
 
 import bibliotecaActivo from '/img/biblioteca-activo.svg'
 import bibliotecaDesactivado from '/img/biblioteca-desactivado.svg'
+import { Link, NavLink } from "react-router-dom"
 
 export function Header(){
     var activo = "activo"
@@ -31,34 +32,34 @@ export function Header(){
             <div className="right-wall"></div>
             <div className="left-wall"></div>
             { /* Aqui va el logo de la pagina */ }
-            <div className="logo-container">
+            <Link to='/' className="logo-container">
                 <img src={logo} alt="zaitex-logo" className="logo-zaitex"/>
-            </div>
+            </Link>
             <nav>
                 {/* Lista de iconos */}
                 <ul className="nav-container">
                     
-                    <li className="home-btn activo">
+                    <NavLink to='/' className="home-btn activo">
                         <img src={casaActivo} alt="home" />
                         <span className="txtInicio">Inicio</span>
-                    </li>
+                    </NavLink>
                     
-                    <li className="about-btn desactivado">
-                        <img src={nosotrosDesactivado} alt="nosotros" />
-                        <span>Nosotros</span>
-                    </li>
-                    <li className="courses-btn desactivado">
+                    <NavLink to='/nosotros' className="about-btn desactivado">
+                        <img src={nosotrosDesactivado} className="logo-nosotros" alt="nosotros" />
+                        <span className="txtNosotros">Nosotros</span>
+                    </NavLink>
+                    <NavLink to='/cursos' className="courses-btn desactivado">
                         <img src={cursoDesactivado} alt="cursos" />
-                        <span>Cursos</span>
-                    </li>
-                    <li className="talleres-btn desactivado">
+                        <span className="txtCursos">Cursos</span>
+                    </NavLink>
+                    <NavLink to='/talleres' className="talleres-btn desactivado">
                         <img src={tallerDesactivado} alt="talleres"/>
-                        <span>Talleres</span>
-                    </li>
-                    <li className="biblioteca-btn desactivado">
+                        <span className="txtTalleres">Talleres</span>
+                    </NavLink>
+                    <NavLink to='/biblioteca' className="biblioteca-btn desactivado">
                         <img src={bibliotecaDesactivado} alt="bilbioteca" />
-                        <span>Bilioteca</span>
-                    </li>
+                        <span className="txtBiblioteca">Bilioteca</span>
+                    </NavLink>
                 </ul>
             </nav>
         </header>
