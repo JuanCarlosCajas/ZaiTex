@@ -66,7 +66,7 @@ nav{
   margin-left: -20px;
 }
 
-/* Muralla izquierda */
+/* Muralla derecha */
 .nav-container::after{
   content: "";
   position: absolute;
@@ -79,11 +79,11 @@ nav{
   border-bottom-left-radius: 98px;
 }
 
-/* Muralla derecha */
+/* Muralla izquierda */
 .nav-container::before{
   content: "";
   position: absolute;
-  width: 100%;
+  width: 1000%;
   height: 110px;
   top: -28px;
   right: 739.5px;
