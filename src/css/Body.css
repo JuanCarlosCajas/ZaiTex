@@ -5,6 +5,11 @@
     --blue : #1962EC;
 }
 
+body{
+    padding: 0;
+    margin: 0;
+}
+
 .cuerpo-contenedor{
     width: 120%;
     height: 1450px;
@@ -17,11 +22,11 @@
 
 .Z-logo{
     position: absolute;
-    left: -1%;/* -6.15rem */
-    margin-left: -140px ;/* -20%*/
+    left: -1%;
+    margin-left: -140px ;
     margin-top: 48px;
-    top: 420px; /*12.4rem*/
-    width: 860px;/* 143.6%  calc(110% + 130px) calc(179px + 100%)*/
+    top: 420px; 
+    width: 860px;
     height: 290px;
     background-color: var(--blue);
     z-index: 6;

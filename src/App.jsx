@@ -1,6 +1,5 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
-import { Header } from '../components/Header'
-import { Body } from './Body'
+import { Header } from './components/Header'
 import { Inicio } from './routes/Inicio'
 import { Nosotros } from './routes/Nosotros'
 import { Cursos } from './routes/Cursos'
@@ -12,8 +11,6 @@ function App() {
   return (
     <>
       <Header/>      
-      {/*<Body/>*/}
-
       <Routes>
         <Route path='/' element={ <Inicio/> }></Route>
         <Route path='/nosotros' element={ <Nosotros/> }></Route>

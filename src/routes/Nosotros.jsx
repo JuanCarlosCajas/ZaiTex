@@ -1,8 +1,10 @@
+import '../css/Nosotros.css'
+
 
 export function Nosotros(){
     return(
-        <>
-            <h1>Hola Mundo</h1>
-        </>
+        <div className="nosotros-container">
+            
+        </div>
     )
 }

@@ -1,13 +1,13 @@
-import '../css/Body.css'
-import persona from '/img/persona_1.png'
-import cuerpo from '/img/body.png'
-import { CartaBeneficios } from '../components/CartaBeneficios'
-import primerBeneficio from '../img/primerBeneficio.png'
-import segundoBeneficio from '../img/segundoBeneficio.png'
-import tercerBeneficio from '../img/tercerBeneficio.png'
-import cuartoBeneficio from '../img/cuartoBeneficio.png'
-import { Ofrecemos } from '../components/Ofrecemos'
-import { Footer } from '../components/Footer'
+import './css/Body.css'
+import persona from './img/persona_1.png'
+import cuerpo from './img/body.png'
+import { CartaBeneficios } from './components/CartaBeneficios'
+import primerBeneficio from './img/primerBeneficio.png'
+import segundoBeneficio from './img/segundoBeneficio.png'
+import tercerBeneficio from './img/tercerBeneficio.png'
+import cuartoBeneficio from './img/cuartoBeneficio.png'
+import { Ofrecemos } from './components/Ofrecemos'
+import { Footer } from './components/Footer'
 
 export function Body(){
 

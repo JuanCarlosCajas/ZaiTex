@@ -1,3 +1,4 @@
+
 import '../css/CartaBeneficios.css'
 
 export function CartaBeneficios(parametros){
