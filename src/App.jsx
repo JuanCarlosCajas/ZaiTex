@@ -10,7 +10,8 @@ function App() {
 
   return (
     <>
-      <Header/>      
+      <Header/>
+            
       <Routes>
         <Route path='/' element={ <Inicio/> }></Route>
         <Route path='/nosotros' element={ <Nosotros/> }></Route>

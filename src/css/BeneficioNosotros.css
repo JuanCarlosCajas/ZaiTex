@@ -1,0 +1,12 @@
+.beneficio-container{
+    width: 400px;
+    height: 250px;
+    background-color: #0058FF;
+    color: white;
+    padding : 30px 40px;
+}
+
+.beneficio-container p{
+    font-size: 18px;
+    text-align: justify;
+}

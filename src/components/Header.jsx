@@ -25,12 +25,13 @@ export function Header(){
     const $talleresBtn = document.querySelector('.talleres-btn')
     const $bibliotecaBtn = document.querySelector('.biblioteca-btn')
     var path;
-
+    /*
     console.log($nosotrosBtn)
     if(window.location.pathname == "/nosotros"){
         path = "nosotros"
         $nosotrosBtn.classList.remove('desactivado')
     }
+    */
     /*
     const $about = document.querySelector('.about-btn')
     console.log($about)

@@ -136,7 +136,6 @@ nav{
   text-decoration: none;
 }
 
-
 .txtInicio{
   color: #fff;
 }
@@ -163,6 +162,7 @@ nav{
       margin-right: 0;
   }
 }
+
 @media screen and (max-width:750px) and (min-width: 900px){
   .nav-container{
       width: 100%;
