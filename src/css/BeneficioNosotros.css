@@ -1,12 +1,20 @@
 .beneficio-container{
-    width: 400px;
+    grid-column: span 2;
+    width: 500px;
     height: 250px;
     background-color: #0058FF;
     color: white;
     padding : 30px 40px;
+    cursor: default;
+    box-shadow: 0px 3px 4px 0px rgb(0, 0, 0, 0.5);
 }
 
 .beneficio-container p{
     font-size: 18px;
     text-align: justify;
+}
+
+.beneficio-container:hover{
+    background-color: #73A0F6;
+    color: black;
 }

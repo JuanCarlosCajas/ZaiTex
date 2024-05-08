@@ -20,43 +20,47 @@ export function Nosotros(){
             <h1 className='h1-Nosotros'>Por qué Zaitex es tu elección sobresaliente</h1>
             <h1 className='stroke-word'>para tu Experiencia de Estudio</h1>
             <div className='beneficios-nosotros'>
-                <BeneficioNosotros 
-                titulo="Excelencia Educativa en el enterno virtual" 
-                parrafo="Ofrecemos una experiencia de educación
-                virtual de alta calidad mediante clases en
-                vivo con docentes comprometidos." />
-                <BeneficioNosotros
-                titulo="Plataformas Educativas de Clase Mundial"
-                parrafo="Aula Virtual Intuitiva: Comunicación
-                directa, pantallas compartidas, pizarras
-                interactivas y clases grabadas para
-                facilitar el aprendizaje"
-                />
-                <BeneficioNosotros 
-                titulo="Comprometidos con la Excelencia Docente"
-                parrafo="Todos nuestros docentes son expertos en
-                metodologías de enseñanza virtual al
-                100%"
-                />
-                <BeneficioNosotros 
-                titulo="Becas y Beneficios para
-                Impulsar tu Educación"
-                parrafo="Facilidades por rendimiento destacado y
-                apoyo económico para superar
-                obstáculos."
-                />
-                <BeneficioNosotros 
-                titulo="Éxito Estudiantil"
-                parrafo="Calidad Validada: Un 90% de estudiantes
-                satisfechos con nuestras clases virtuales
-                y el desempeño docente."
-                />
-                <BeneficioNosotros 
-                titulo="Innovación Educativa"
-                parrafo="Fomentando la investigación y desarrollo
-                de proyectos de alto impacto en la
-                sociedad."
-                />
+                <div className='row-1'>
+                    <BeneficioNosotros 
+                    titulo="Excelencia Educativa en el enterno virtual" 
+                    parrafo="Ofrecemos una experiencia de educación
+                    virtual de alta calidad mediante clases en
+                    vivo con docentes comprometidos." />
+                    <BeneficioNosotros
+                    titulo="Plataformas Educativas de Clase Mundial"
+                    parrafo="Aula Virtual Intuitiva: Comunicación
+                    directa, pantallas compartidas, pizarras
+                    interactivas y clases grabadas para
+                    facilitar el aprendizaje"
+                    />
+                    <BeneficioNosotros 
+                    titulo="Comprometidos con la Excelencia Docente"
+                    parrafo="Todos nuestros docentes son expertos en
+                    metodologías de enseñanza virtual al
+                    100%"
+                    />
+                </div>
+                <div className="row-2">
+                    <BeneficioNosotros 
+                    titulo="Becas y Beneficios para
+                    Impulsar tu Educación"
+                    parrafo="Facilidades por rendimiento destacado y
+                    apoyo económico para superar
+                    obstáculos."
+                    />
+                    <BeneficioNosotros 
+                    titulo="Éxito Estudiantil"
+                    parrafo="Calidad Validada: Un 90% de estudiantes
+                    satisfechos con nuestras clases virtuales
+                    y el desempeño docente."
+                    />
+                    <BeneficioNosotros 
+                    titulo="Innovación Educativa"
+                    parrafo="Fomentando la investigación y desarrollo
+                    de proyectos de alto impacto en la
+                    sociedad."
+                    />
+                </div>
             </div>
             <div className='semiFooter-container'>
                 <h1 className='titulo'>Descubre el poder de dar vida a tus ideas y transforma</h1>

@@ -64,7 +64,7 @@ export function Body(){
                 color="#FFDEB8"
                 />
                 <Ofrecemos 
-                titulo="Diplomados"
+                titulo="Talleres"
                 texto="Sumérgete en cursos breves, diseñados
                 para un aprendizaje práctico y rápido,
                 impulsando tus habilidades para destacar

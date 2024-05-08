@@ -1,5 +1,6 @@
 /* Font Familia : 'Nunito' */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root{
     --blue : #1962EC;
@@ -87,6 +88,10 @@ body{
 }
 
 .beneficios-background{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
     padding: 0;
     margin: 0;
@@ -98,21 +103,21 @@ body{
 }
 
 .beneficios-background h1{
-    font-family: 'Nunito';
-    font-weight: 900;
+    font-family: 'Inter';
+    font-weight: 700;
     margin-top: 20px;
-    margin-left: 50px;
-    padding-top: 40px;
-    font-size: 54px;
+    width: 1415px;
+    padding-top: 60px;
+    font-size: 50px;
 }
 
 .beneficios-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding-top: 20px;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 14px;
+    gap: 30px;
     margin-top: 70px;
     height: max-content;
     width: 91.7%;
@@ -121,11 +126,12 @@ body{
 .list-ofre-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     gap: 16px;
     flex-wrap: wrap;
     width: 100%;
     height: max-content;
+    padding-left: 75px;
     padding-top: 50px;
 }
 
