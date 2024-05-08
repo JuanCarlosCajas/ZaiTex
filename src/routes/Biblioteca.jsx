@@ -1,9 +1,10 @@
+import '../css/Biblioteca.css'
+
 export function Biblioteca(){
-    console.log("Accediendo a Biblioteca")
 
     return(
         <>
-            <h1>Hola Mundo</h1>
+            <div className='biblioteca-container'></div>
         </>
     )
 }

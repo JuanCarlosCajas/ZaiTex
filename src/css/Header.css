@@ -36,8 +36,14 @@ body{
 }
 
 nav{
+  position: relative;
   float: right;
   width: 82%;
+}
+
+a{
+  text-decoration: none;
+  list-style: none;
 }
 
 .nav-container{
@@ -53,6 +59,65 @@ nav{
   min-width: 100px;
 }
 
+.circulo{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #1962EC;
+  transform: translateX(-327%);
+  margin-top: 13px;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+/* Muralla derecha */
+.circulo::after{
+  content: "";
+  position: absolute;
+  width: 900px;
+  height: 110px;
+  top: -40px;
+  /*left: 132px;*/
+  background-color: white;
+  z-index: -1;
+  border-bottom-left-radius: 99px;
+  transform: translateX(10.05%);
+  transition: 0.5s;
+}
+
+/* Muralla izquierda */
+.circulo::before{
+  content: "";
+  position: absolute;
+  width: 5000%;
+  height: 110px;
+  top: -40px;
+  transform: translateX(-99.86%);
+  background-color: white;
+  z-index: -1;
+  border-bottom-right-radius: 94px;
+  transition: 0.5s;
+}
+
+.luna{ 
+  position: absolute;
+  top: 0px;
+  width: 120px;
+  height: 120px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -moz-box-shadow: 30px 10px 0 white;
+  -webkit-box-shadow: 30px 10px 0 white;
+  box-shadow: -2px -66px 0px 10px white;
+  /*left: -11px;  48.39% */
+  z-index: 10;
+  /*transform: rotate(206deg);*/
+  transform: translateX(-272.4%);
+  transition: 0.5s;
+}
+
 .nav-container .home-btn, .nav-container .about-btn, .nav-container .courses-btn, .nav-container .talleres-btn, .nav-container .biblioteca-btn{
   display: flex;
   position: relative; /* Cambia esto produce error */
@@ -64,54 +129,11 @@ nav{
   padding: 0;
   margin: 0;
   margin-left: -20px;
-}
-
-/* Muralla derecha */
-.nav-container::after{
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 110px;
-  top: -28px;
-  left: 132px;
-  background-color: white;
-  z-index: -1;
-  border-bottom-left-radius: 99px;
-}
-
-/* Muralla izquierda */
-.nav-container::before{
-  content: "";
-  position: absolute;
-  width: 1000%;
-  height: 110px;
-  top: -28px;
-  right: 737.7px;
-  background-color: white;
-  z-index: -1;
-  border-bottom-right-radius: 94px;
-}
-
-/* Luna de arriba del boton activo */
-.nav-container .activo::before{
-  content: "";
-  position: absolute;
-  top: -14px;
-  width: 120px;
-  height: 120px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  -moz-box-shadow: 30px 10px 0 white;
-  -webkit-box-shadow: 30px 10px 0 white;
-  box-shadow: 30px 60px 0 10px white;
-  left: -11px; /* 48.39% */
-  z-index: 10;
-  transform: rotate(206deg);
+  transition: 0.5s;
 }
 
 /* Separación de las 2 paredes */
-.nav-container .activo::after{
+.nav-container .active::after{
   content: "";
   position: absolute;
   top: -19px;
@@ -125,21 +147,26 @@ nav{
 }
 
 /* Circulo celeste */
-.nav-container .activo{
-  background-color: #1962EC;
-  padding: 18px 30px;
-  border-radius: 50%;
-  margin-top: 16px;
+.nav-container .active{
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+
+.active .txtInicio, .active .txtNosotros, .active .txtCursos, .active .txtTalleres, .active .txtBiblioteca {
+  color: #fff;
 }
 
 .about-btn{
   text-decoration: none;
 }
 
-.txtInicio{
-  color: #fff;
+.logo-nosotros{
+  margin-top: 7px;
 }
 
+.txtNosotros{
+  margin-top: 5px;
+}
 
 .body-foto{
   width: 120%;
@@ -152,8 +179,68 @@ nav{
   z-index: -20;
 }
 
-.txtNosotros, .txtCursos, .txtTalleres, .txtBiblioteca{
+.txtNosotros, .txtCursos, .txtTalleres, .txtInicio, .txtBiblioteca{
   color: #1962EC;
+}
+
+a:nth-child(1).active .txtInicio{
+  color: white;
+} 
+
+a:nth-child(1).active ~ .circulo{
+  transform: translateX(-327%);
+}
+
+a:nth-child(1).active ~ .luna{
+  transform: translateX(-272.4%);
+}
+
+a:nth-child(2).active .txtNosotros{
+  color: white;
+} 
+
+a:nth-child(2).active ~ .circulo{
+  transform: translateX(-176%);
+}
+
+a:nth-child(2).active ~ .luna{
+  transform: translateX(-146.9%);
+}
+
+a:nth-child(3).active .txtCursos{
+  color: white;
+} 
+
+a:nth-child(3).active ~ .circulo{
+  transform: translateX(-20%);
+}
+
+a:nth-child(3).active ~ .luna{
+  transform: translateX(-16.9%);
+}
+
+a:nth-child(4).active .txtTalleres{
+  color: white;
+} 
+
+a:nth-child(4).active ~ .circulo{
+  transform: translateX(130%);
+}
+
+a:nth-child(4).active ~ .luna{
+  transform: translateX(108.3%);
+}
+
+a:nth-child(5).active .txtBiblioteca{
+  color: white;
+} 
+
+a:nth-child(5).active ~ .circulo{
+  transform: translateX(290%);
+}
+
+a:nth-child(5).active ~ .luna{
+  transform: translateX(241.5%);
 }
 
 @media screen and (min-width: 200px) and (max-width: 752px){

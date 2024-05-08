@@ -2,7 +2,6 @@
 import '../css/CartaBeneficios.css'
 
 export function CartaBeneficios(parametros){
-    console.log(parametros.tipo)
     if(parametros.tipo == "personas"){
 
         const estiloImagen = {

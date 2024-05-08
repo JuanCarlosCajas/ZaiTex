@@ -5,6 +5,7 @@ import { Nosotros } from './routes/Nosotros'
 import { Cursos } from './routes/Cursos'
 import { Talleres } from './routes/Talleres'
 import { Biblioteca } from './routes/Biblioteca'
+import { Photoshop } from './routes/Photoshop'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path='/talleres' element={ <Talleres/> }></Route>
         <Route path='/biblioteca' element={ <Biblioteca/> }></Route>
         <Route path="/*" element={ <Navigate to='/'/> }></Route>
+        <Route path='/cursos/photoshop' element={ <Photoshop/> }></Route>
       </Routes>
     </>
   )

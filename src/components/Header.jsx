@@ -15,29 +15,54 @@ import tallerDesactivado from '../img/talleres-desactivado.svg'
 
 import bibliotecaActivo from '../img/biblioteca-activo.svg'
 import bibliotecaDesactivado from '../img/biblioteca-desactivado.svg'
-import { Link, NavLink } from "react-router-dom"
+import { Link, NavLink, useLocation } from "react-router-dom"
+import { useEffect, useState } from 'react'
 
 export function Header(){
-    
-    const $homeBtn = document.getElementsByClassName('home-btn')
-    const $nosotrosBtn = document.getElementsByClassName('about-btn')
-    const $coursesBtn = document.querySelector('.courses-btn')
-    const $talleresBtn = document.querySelector('.talleres-btn')
-    const $bibliotecaBtn = document.querySelector('.biblioteca-btn')
-    var path;
-    /*
-    console.log($nosotrosBtn)
-    if(window.location.pathname == "/nosotros"){
-        path = "nosotros"
-        $nosotrosBtn.classList.remove('desactivado')
-    }
-    */
-    /*
-    const $about = document.querySelector('.about-btn')
-    console.log($about)
-    $about.classList.remove("desactivado")
-    $about.classList.add("activo")
-    */
+
+    const location = useLocation();
+    const [imageUrl, setImageUrl] = useState('');
+
+    useEffect(() => {
+        console.log(location)
+        // Actualiza el src de la imagen cuando la ubicación cambia
+        if(location.pathname == '/nosotros'){
+            setImageUrl('nosotros')
+            console.log(location)
+        }
+        else if (location.pathname == '/'){
+            setImageUrl('inicio')
+        }
+        else if (location.pathname == '/cursos' 
+            || location.pathname == '/cursos/photoshop'){
+            setImageUrl('cursos')
+        }
+        else if (location.pathname == '/talleres'){
+            setImageUrl('talleres')
+        }
+        else if (location.pathname == '/biblioteca'){
+            setImageUrl('biblioteca')
+        }
+    },[location]);
+
+    window.addEventListener('DOMContentLoaded', function(){
+        const list = document.querySelectorAll('.list')
+
+        function activarLink(){
+            list.forEach((item) => {
+                item.classList.remove("active")
+                this.classList.add("active")
+            })
+        }
+
+        list.forEach((item)=>{
+            item.addEventListener('click', activarLink())
+        })
+
+    })
+
+
+    var parte = "ala";
     return (
         
         <header className="header-container">
@@ -52,27 +77,30 @@ export function Header(){
                 {/* Lista de iconos */}
                 <ul className="nav-container">
                     
-                    <NavLink to='/' className="home-btn activo seleccionado">
-                        <img src={casaActivo} alt="home" />
+                    <NavLink to='/' className="home-btn list">
+                        <img src={imageUrl == 'inicio' ? casaActivo : casaDesactivado} alt="home" />
                         <span className="txtInicio">Inicio</span>
                     </NavLink>
                     
-                    <NavLink to='/nosotros' className="about-btn desactivado">
-                        <img src={path == "nosotros" ? nosotrosActivo : nosotrosDesactivado} className="logo-nosotros" alt="nosotros" />
+                    <NavLink to='/nosotros' className="about-btn list">
+                        <img src={imageUrl == 'nosotros' ? nosotrosActivo : nosotrosDesactivado} className="logo-nosotros" alt="nosotros" />
                         <span className="txtNosotros">Nosotros</span>
                     </NavLink>
-                    <NavLink to='/cursos' className="courses-btn desactivado">
-                        <img src={cursoDesactivado} alt="cursos" />
+                    <NavLink to='/cursos' className="courses-btn list">
+                        <img src={imageUrl == 'cursos' ? cursoActivo : cursoDesactivado} alt="cursos" />
                         <span className="txtCursos">Cursos</span>
                     </NavLink>
-                    <NavLink to='/talleres' className="talleres-btn desactivado">
-                        <img src={tallerDesactivado} alt="talleres"/>
+                    <NavLink to='/talleres' className="talleres-btn list">
+                        <img src={imageUrl == 'talleres' ? tallerActivo : tallerDesactivado} alt="talleres"/>
                         <span className="txtTalleres">Talleres</span>
                     </NavLink>
-                    <NavLink to='/biblioteca' className="biblioteca-btn desactivado">
-                        <img src={bibliotecaDesactivado} alt="bilbioteca" />
-                        <span className="txtBiblioteca">Bilioteca</span>
+                    <NavLink to='/biblioteca' className="biblioteca-btn list">
+                        <img src={imageUrl == 'biblioteca' ? bibliotecaActivo : bibliotecaDesactivado} alt="bilbioteca" />
+                        <span className="txtBiblioteca">Biblioteca</span>
                     </NavLink>
+
+                    <div className='circulo'></div>
+                    <div className='luna'></div>
                 </ul>
             </nav>
         </header>

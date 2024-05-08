@@ -57,18 +57,18 @@ body{
 
 .despega-container{
     position: relative;
-    width: 30%;
+    width: 27%;
     height: 200px;
     float: right;
     margin-top: 24rem;
-    right: -1%;
+    right: 0%;
     background-color: #fff;
     color: var(--blue);
     padding: 20px;
-    padding-left: 10%;
+    padding-left: 6%;
     opacity: 0.9;
-    border-top-left-radius: 35%;
-    border-bottom-left-radius: 35%;
+    border-top-left-radius: 120px;
+    border-bottom-left-radius: 120px;
     font-family: 'Nunito';
 }
 
