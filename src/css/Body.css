@@ -97,7 +97,7 @@ body{
     margin: 0;
     margin-top: 116px;
     left: -0.5%;
-    width: 110%;
+    width: 100%;
     height: max-content;
     background-color: white;
 }
@@ -131,7 +131,7 @@ body{
     flex-wrap: wrap;
     width: 100%;
     height: max-content;
-    padding-left: 75px;
+    /*padding-left: 98px;*/
     padding-top: 50px;
 }
 
@@ -147,7 +147,6 @@ body{
     height: 600px;
     margin-top: 90px;
     background-color: var(--blue);
-
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1289px){

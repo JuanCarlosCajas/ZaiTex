@@ -34,7 +34,10 @@ export function Header(){
             setImageUrl('inicio')
         }
         else if (location.pathname == '/cursos' 
-            || location.pathname == '/cursos/photoshop'){
+            || location.pathname == '/cursos/software'
+            || location.pathname == '/cursos/software/photoshop'
+            || location.pathname == '/cursos/especialidades'
+            || location.pathname == '/cursos/ilustracion'){
             setImageUrl('cursos')
         }
         else if (location.pathname == '/talleres'){
@@ -45,7 +48,20 @@ export function Header(){
         }
     },[location]);
 
+    
+    /*
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getComputedStyle($circulo, '::before' ).style.background = "green";
+        } else {
+            document.querySelector(".header-container").style.background = "red";
+        }
+    }
+    */
     window.addEventListener('DOMContentLoaded', function(){
+
         const list = document.querySelectorAll('.list')
 
         function activarLink(){
@@ -65,7 +81,7 @@ export function Header(){
     var parte = "ala";
     return (
         
-        <header className="header-container">
+        <header className="header-container" id='header'>
             <div className='cubridor-header'></div>
             <div className="right-wall"></div>
             <div className="left-wall"></div>
