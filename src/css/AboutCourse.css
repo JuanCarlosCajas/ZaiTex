@@ -1,0 +1,31 @@
+.aboutCourse-container{
+    width: 90%;
+    margin: 0 auto;
+    height: max-content;
+}
+
+.aboutCourse-container h1{
+    width: 100%;
+    
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    color: black;
+}
+
+.aboutCourse-container p{
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 27.61px;
+    color: black;
+
+    margin-top: 30px;
+}
+
+.aboutCourse-container .photo-about{
+    width: 100%;
+    height: 406px;
+    margin-top: 20px;
+}

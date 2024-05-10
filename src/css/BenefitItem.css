@@ -1,0 +1,32 @@
+.BeneItem-container{
+    width: 274px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.BeneItem-body{
+    width: 244px;
+    background-color: #1962EC;
+    height: 180px;
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.BeneItem-body h1{
+    margin-top: 18px;
+
+    color: #fff;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.BeneItem-body p{
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 18.42px;
+}

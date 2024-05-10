@@ -4,15 +4,17 @@ body{
 }
 
 .photoShop-container{
+    background-color: #F1F1F1;
     width: 100%;
-    height: 900px;
+    height: max-content;
+    border: 2px solid black;
 }
 
 .headerPhotoshop{
     position: relative;
     transform: translateY(30px);
     width: 100%;
-    height: 1100px;
+    height: 1400px;
 }
 
 .photoShop-container::after{
@@ -21,7 +23,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    height: 1100px;
+    height: 1400px;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
     transform: translateY(27px);
@@ -29,7 +31,7 @@ body{
 
 .titulo-container{
     position: absolute;
-    transform: translateY(-240%);
+    transform: translateY(-330%);
     margin-left: 90px;
     z-index: 5;
     color: #fff;
@@ -37,29 +39,79 @@ body{
 }
 
 .titulo-container h1{
-    margin-top: 2px;
+    margin-top: 4px;
 }
 
 .body-Photoshop{
     position: relative;
     display: flex;
     width: 100%;
-    height: max-content;
-    background-color: #fff;
+    height: 2800px;
+    background-color: #F1F1F1;
     z-index: 6;
     transform: translateY(-170px);
 }
 
 .form-container{
-    width: 50%;
-    border: 2px solid black;
+    width: 45%;
     height: max-content;
     display: flex;
     justify-content: center;
 }
 
 .Photoshop{
-    width: 50%;
+    width: 55%;
     height: max-content;
-    border: 2px solid black;
+}
+
+.Photoshop h1{
+    margin-top: 40px;
+
+    color: black;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.brochure-container{
+    width: 90%;
+    height: 70px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    /* Separación con el item de abajo con el boton brochure */
+    padding-bottom: 30px;
+}
+
+.bodyPhotoshop-container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.Benefit-container{
+
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.brochure-container .brochure-button{
+    width: 181px;
+    height: 50px;
+    border: 3px solid #1962EC;
+    border-radius: 15px;
+
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    color: #1962EC;
+}
+
+.brochure-button:hover{
+    color: #fff;
+    background-color: #1962EC;
 }

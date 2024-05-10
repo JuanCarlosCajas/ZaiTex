@@ -9,6 +9,11 @@ import { Photoshop } from './routes/CursoPhotoshop'
 import { Ilustracion } from './routes/RutaIlustracion'
 import { Especialidad } from './routes/RutaEspecialidad'
 import { Software } from './routes/RutaSoftware'
+import { PersonajeManga } from './routes/CursoPersonajeManga'
+import { AutoCad } from './routes/CursoAutoCad'
+import { Marketing } from './routes/CursoMarketing'
+import { CorelDraw } from './routes/CursoCorelDraw'
+import { Ilustrator } from './routes/CursoIlustrator'
 
 function App() {
 
@@ -21,9 +26,14 @@ function App() {
         <Route path='/nosotros' element={ <Nosotros/> }></Route>
         <Route path='/cursos' element={ <Cursos/> }></Route>
         <Route path='/cursos/ilustracion' element={ <Ilustracion/> }></Route>
+        <Route path='/cursos/ilustracion/personajes-de-manga' element={ <PersonajeManga/> }></Route>
         <Route path='/cursos/especialidades' element={ <Especialidad/> }></Route>
+        <Route path='/cursos/especialidades/autocad' element={ <AutoCad/> }></Route>
+        <Route path='/cursos/especialidades/marketing' element={ <Marketing/> }></Route>
         <Route path='/cursos/software' element={ <Software/> }></Route>
         <Route path='/cursos/software/photoshop' element={ <Photoshop/> }></Route>
+        <Route path='/cursos/software/coreldraw' element={ <CorelDraw/> }></Route>
+        <Route path='/cursos/software/ilustrator' element={ <Ilustrator/> }></Route>
         <Route path='/talleres' element={ <Talleres/> }></Route>
         <Route path='/biblioteca' element={ <Biblioteca/> }></Route>
         <Route path="/*" element={ <Navigate to='/'/> }></Route>

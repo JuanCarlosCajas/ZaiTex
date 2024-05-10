@@ -9,7 +9,6 @@ import ilustraciones from '../img/ilustraciones.png'
 import software from '../img/software.png'
 import especialidades from '../img/especialidades.png'
 
-
 import '../css/Cursos.css'
 import { TipoCurso } from '../components/TipoCurso'
 import { Formulario } from '../components/Formulario'
