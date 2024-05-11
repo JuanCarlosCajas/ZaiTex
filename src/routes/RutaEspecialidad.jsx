@@ -19,7 +19,7 @@ export function Especialidad(){
                         <TipoCurso
                         imagen={AutoCad}
                         nombre="AutoCad para interiores"
-                        path="/cursos/especialidad/autocad"
+                        path="/cursos/especialidades/autocad"
                         />
                     </div>
                     <p className='tituloEmpresarial'>Empresarial / Marketing</p>
@@ -27,7 +27,7 @@ export function Especialidad(){
                         <TipoCurso
                         imagen={Marketing}
                         nombre="Marketing"
-                        path="/cursos/especialidad/marketing"
+                        path="/cursos/especialidades/marketing"
                         />
                     </div>
                 </main>

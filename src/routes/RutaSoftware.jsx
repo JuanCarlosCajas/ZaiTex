@@ -22,8 +22,8 @@ export function Software(){
                         />
                         <TipoCurso 
                         imagen={Ilustrator}
-                        nombre="Ilustrator"
-                        path="/cursos/software/ilustrator"
+                        nombre="Illustrator"
+                        path="/cursos/software/illustrator"
                         />
                     </div>
                     <div className='row-2'>

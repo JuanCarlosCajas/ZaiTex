@@ -16,20 +16,19 @@ import { Plan } from '../components/PlanEstudios'
 import { SemiFooter } from '../components/SemiFooter'
 
 export function Photoshop(){
-    console.log("Estas en photoshop")
     return (
         <>
-            <div className='photoShop-container'>
-                <img src={photoshopBody} alt="" className='headerPhotoshop' />
+            <div className='Course-container'>
+                <img src={photoshopBody} alt="" className='headerCourse'/>
                 <section className='titulo-container'>
                     <img src={tituloPhotoshop} alt="" width={"70px"} />
                     <h1>Adobe Photoshop</h1>
                 </section>
-                <section className='body-Photoshop'>
+                <section className='body-Course'>
                     <aside className='form-container'>
                         <Formulario/>
                     </aside>
-                    <main className='Photoshop'>
+                    <main className='Course'>
                         <div className='brochure-container'>
                             <button type="button" className='brochure-button'>Brochure</button>
                         </div>
@@ -40,7 +39,7 @@ export function Photoshop(){
                         imagen={primeraFoto}
                         />
 
-                        <div className='bodyPhotoshop-container'>
+                        <div className='bodyCourse-container'>
                             <h1>¿Por qué estudiar Adobe Photoshop en ZaiTex?</h1>
                             <div className='Benefit-container'>
                                 <BenefitItem
@@ -67,6 +66,7 @@ export function Photoshop(){
                             />
                             <h1>Plan de Estudios</h1>
                             <Plan
+                            modo="simple"
                             titulo1="Fundamentos de Photoshop"
                             beneficio1="Introducción a Photoshop: Interfaz y herramientas básicas."
                             beneficio2="Resolución, tamaño de lienzo y formatos de archivo."

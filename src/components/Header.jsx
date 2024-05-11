@@ -35,9 +35,15 @@ export function Header(){
         }
         else if (location.pathname == '/cursos' 
             || location.pathname == '/cursos/software'
+            || location.pathname == '/cursos/software/illustrator'
             || location.pathname == '/cursos/software/photoshop'
+            || location.pathname == '/cursos/software/coreldraw'
             || location.pathname == '/cursos/especialidades'
-            || location.pathname == '/cursos/ilustracion'){
+            || location.pathname == '/cursos/especialidades/autocad'
+            || location.pathname == '/cursos/especialidades/marketing'
+            || location.pathname == '/cursos/ilustracion'
+            || location.pathname == '/cursos/ilustracion/personajes-de-manga'
+        ){
             setImageUrl('cursos')
         }
         else if (location.pathname == '/talleres'){

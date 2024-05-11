@@ -1,6 +1,7 @@
 .SemiFooter{
     width: 90%;
     margin: 70px auto;
+    margin-bottom: -20px;
 }
 
 .SemiFooter .paragraph{

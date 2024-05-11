@@ -3,27 +3,26 @@ body{
     padding: 0;
 }
 
-.photoShop-container{
+.Course-container{
     background-color: #F1F1F1;
     width: 100%;
     height: max-content;
-    border: 2px solid black;
 }
 
-.headerPhotoshop{
+.headerCourse{
     position: relative;
     transform: translateY(30px);
     width: 100%;
-    height: 1400px;
+    height: 1100px;
 }
 
-.photoShop-container::after{
+.Course-container::after{
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 1400px;
+    height: 1100px;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
     transform: translateY(27px);
@@ -31,7 +30,7 @@ body{
 
 .titulo-container{
     position: absolute;
-    transform: translateY(-330%);
+    transform: translateY(-270%);
     margin-left: 90px;
     z-index: 5;
     color: #fff;
@@ -42,14 +41,16 @@ body{
     margin-top: 4px;
 }
 
-.body-Photoshop{
+.body-Course{
     position: relative;
     display: flex;
     width: 100%;
-    height: 2800px;
+    /*padding-bottom: 50px;*/
+    /*height: 2800px;*/
+    height: max-content;
     background-color: #F1F1F1;
     z-index: 6;
-    transform: translateY(-170px);
+    transform: translateY(-100px);
 }
 
 .form-container{
@@ -59,12 +60,12 @@ body{
     justify-content: center;
 }
 
-.Photoshop{
+.Course{
     width: 55%;
     height: max-content;
 }
 
-.Photoshop h1{
+.Course h1{
     margin-top: 40px;
 
     color: black;
@@ -85,7 +86,7 @@ body{
     padding-bottom: 30px;
 }
 
-.bodyPhotoshop-container{
+.bodyCourse-container{
     width: 90%;
     margin: 0 auto;
 }

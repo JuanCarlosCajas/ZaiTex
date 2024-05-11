@@ -33,7 +33,7 @@ function App() {
         <Route path='/cursos/software' element={ <Software/> }></Route>
         <Route path='/cursos/software/photoshop' element={ <Photoshop/> }></Route>
         <Route path='/cursos/software/coreldraw' element={ <CorelDraw/> }></Route>
-        <Route path='/cursos/software/ilustrator' element={ <Ilustrator/> }></Route>
+        <Route path='/cursos/software/illustrator' element={ <Ilustrator/> }></Route>
         <Route path='/talleres' element={ <Talleres/> }></Route>
         <Route path='/biblioteca' element={ <Biblioteca/> }></Route>
         <Route path="/*" element={ <Navigate to='/'/> }></Route>

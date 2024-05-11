@@ -6,3 +6,11 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+# Falta hacer los siguientes cambios
+
+- Mejorar Formulario
+- Mejorar Header
+- Mejorar Horarios de estudios (Corel draw el final tiene 4 items)
+- Mejorar los beneficios de los cursos

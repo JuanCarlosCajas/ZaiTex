@@ -1,6 +1,7 @@
 .Plan-container{
     width: 100%;
-    height: 690px;
+    height: max-content;
+    padding-bottom: 20px;
     margin: 40px auto;
     background-color: white;
     border-radius: 47px;
@@ -9,7 +10,8 @@
 
 .Plan-container .rowPlan-1{
     width: 100%;
-    height: 140px;
+    height: max-content; /* 190px */
+    padding-bottom: 60px ;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -21,26 +23,67 @@
     width: 260px;
     font-size: 18px;
     margin: 0;
+    transform: translateY(0px);
     margin-left: 20px;
 }
 
 .rowPlan-benefits{
     color: black;
     width: 590px;
-    height: 100px;
+    height: 120px;
     font-size: 16px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 8px;
+    justify-content: start;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.rowPlan-benefits-5{
+    color: black;
+    width: 590px;
+    height: 200px;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.rowPlan-benefits-6{
+    color: black;
+    width: 590px;
+    height: 230px;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.rowPlan-benefits-6 li{
+    width: 260px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.rowPlan-benefits-5 li{
+    width: 260px;
+    height: 70px;
+    margin-bottom: 10px;
 }
 
 .rowPlan-benefits li{
-    width: 230px;
+    width: 260px;
+    height: 80px;
+    margin-bottom: 10px;
 }
 
 .Plan-container hr{
-    width: 545px;
     border: 1px solid black;
-    transform: translateX(160px);
+    width: 560px;
+    margin-top: 10px;    
+    transform: translateX(-30px);
 }
