@@ -23,7 +23,7 @@ body{
 .tituloNosotros{
     position: absolute;
     margin-top: -1100px;
-    margin-left: 40px;
+    margin-left: 200px;
     font-size: 90px;
     z-index: 2;
     color: white;
@@ -41,8 +41,9 @@ body{
 
 .explorandoZaitex h1{
     color: white;
+    width: 88.1%;
     text-align: end;
-    padding-right: 57px;
+    padding-right: 40px;
     margin-top: 0;
     padding-top: 53px;
     font-size: 40px;
@@ -52,8 +53,10 @@ body{
     position: relative;
     text-align: justify;
     font-display: flex;
+    width: 1450px;
+    margin: 0 auto;
     color: #fff;
-    padding-inline: 50px;
+    padding-inline: 60px;
     font-size: 17px;
 }
 
@@ -80,9 +83,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 70px;
+    padding-top: 130px;
     align-items: center;
-    padding-bottom: 70px;
+    padding-bottom: 130px;
     background-color: #004DDF;
 }
 
