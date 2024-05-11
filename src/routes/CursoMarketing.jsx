@@ -92,7 +92,7 @@ export function Marketing(){
                             />
                         </div>
 
-                        <SemiFooter curso="Creación de personajes estilo manga e ilustración con Adobe Illustrator" />
+                        <SemiFooter curso="Marketing digital" />
                     </main>
                 </section>
                 <Footer modo="completo" />
