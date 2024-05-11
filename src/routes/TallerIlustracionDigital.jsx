@@ -31,15 +31,17 @@ export function TallerIlustracionDigital(){
                         descripcion="xploraremos cómo dar vida a tus creaciones con técnicas avanzadas de dibujo digital. Desde el diseño inicial hasta los toques finales, aprenderás a crear personajes memorables con estilo anime."
                         />
 
-                        <DurationDate
-                        parrafo1="Adolecente a mas "
-                        parrafo2="de 15 años a mas"
-                        parrafo3="Sábados de"
-                        parrafo4="6:45 pm a 8:00 pm"
-                        parrafo5="2"
-                        parrafo6="meses"
-                        parrafo7="Próximamente"
-                        />
+                        <div className='bodyCourse-container'>
+                            <DurationDate
+                            parrafo1="Adolecente a mas "
+                            parrafo2="de 15 años a mas"
+                            parrafo3="Sábados de"
+                            parrafo4="6:45 pm a 8:00 pm"
+                            parrafo5="2"
+                            parrafo6="meses"
+                            parrafo7="Próximamente"/>
+                        </div>
+                        
 
                         <div className='secondTitle'>
                             <strong>CONOCE</strong><span>NUESTROS OTROS TALLERES</span>
