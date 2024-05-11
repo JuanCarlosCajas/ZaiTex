@@ -1,6 +1,11 @@
 import './css/Body.css'
 import persona from './img/persona_1.png'
-import cuerpo from './img/prueba.png'
+
+import cuerpo from './img/headerInicio.png'
+import Inicio_2 from './img/Inicio/Inicio_2.jpg'
+import Inicio_3 from './img/Inicio/Inicio_3.jpg'
+import Inicio_4 from './img/Inicio/Inicio_4.jpg'
+
 import { CartaBeneficios } from './components/CartaBeneficios'
 import primerBeneficio from './img/primerBeneficio.png'
 import segundoBeneficio from './img/segundoBeneficio.png'
@@ -13,7 +18,12 @@ export function Body(){
 
     return(
         <>
-            <img src={cuerpo} alt="body" className='cuerpo-contenedor'/>
+            <div className='slideInicio-box'>
+                <li className='slideInicio-item'><img src={cuerpo} alt="body" className='cuerpo-contenedor'/></li>
+                <li className='slideInicio-item'><img src={Inicio_2} alt="body" className='cuerpo-contenedor'/></li>
+                <li className='slideInicio-item'><img src={Inicio_3} alt="body" className='cuerpo-contenedor'/></li>
+                <li className='slideInicio-item'><img src={Inicio_4} alt="body" className='cuerpo-contenedor'/></li>
+            </div>
             <div className='Z-logo'></div>
             <img src={persona} className='persona-1' width={"700px"} alt="persona" />
             <div className='despega-container'>

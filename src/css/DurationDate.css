@@ -1,19 +1,48 @@
-.horario-container{
+.Duration-container{
     color: black;
     width: 100%;
-    height: 90px;
+    margin: 80px auto;
+    height: max-content;
     border-radius: 18px;
-    background-color: #fff;
-
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+}
+
+.Duration-container .Duration-item{
+    background-color: #FFCE51;
+    padding-left: 15px;
+    list-style: none;
+    width: 200px;
+    height: 200px;
+
+    cursor: default;
 }
 
 .Duration-container p{
     font-family: 'Inter';
     color: black; 
-    margin-left: 80px;
     font-weight: 300;
+    font-size: 16px;
+    margin-bottom: -13px;
+}
+
+.Duration-item .firstPara{
+    margin-top: 85px;
+}
+
+.Duration-item .numero{
+    padding: 0;
+    margin: 0;
+    font-size: 60px;
+}
+
+.Duration-item .proxima{
+    margin-top: 110px;
+}
+
+.Duration-item .negrita{
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .horario-container p{

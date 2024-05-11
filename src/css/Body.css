@@ -11,12 +11,23 @@ body{
     margin: 0;
 }
 
+.slideInicio-box{
+    width: 400%;
+    display: flex;
+    overflow-x: hidden;
+    animation: slideInicio-animation 20s infinite alternate;
+}
+
+.slideInicio-item{
+    width: 100%;
+}
+
 .cuerpo-contenedor{
-    width: 120%;
-    height: 1450px;
-    position: absolute;
+    width: 100%;
+    height: 1295px;
+    position: relative;
     z-index: -1;
-    right: -100px;
+    right: 0px;
     top: -20px;
     opacity: 1;
 }
@@ -50,31 +61,33 @@ body{
 }
 
 .persona-1{
-    position: relative;
+    position: absolute;
     top: 120px;
     z-index: 7;
     width: 45%;
 }
 
 .despega-container{
-    position: relative;
+    position: absolute;
     width: 27%;
-    height: 200px;
-    float: right;
+    height: 250px;
     margin-top: 24rem;
-    right: 0%;
-    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0px;
+    right: 0px;
+    background-color: rgba(255, 255, 255, 0.7);
     color: var(--blue);
     padding: 20px;
     padding-left: 6%;
-    opacity: 0.9;
     border-top-left-radius: 120px;
     border-bottom-left-radius: 120px;
     font-family: 'Nunito';
 }
 
 .despega-container h1{
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 900;
     margin-bottom: 0;
     margin-left: 40px;
@@ -95,7 +108,7 @@ body{
     position: relative;
     padding: 0;
     margin: 0;
-    margin-top: 116px;
+    margin-top: 36px;
     left: -0.5%;
     width: 100%;
     height: max-content;
@@ -180,4 +193,18 @@ body{
         width: 160%;
 
     }
+}
+
+@keyframes slideInicio-animation{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
 }

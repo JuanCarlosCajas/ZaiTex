@@ -35,7 +35,7 @@ export function Photoshop(){
 
                         <AboutCourse 
                         pregunta1="En qué consiste el curso de Photoshop?"
-                        descripcion="El curso de Adobe Illustrator se centra en enseñar a los estudiantes cómo utilizar esta potente herramienta de diseño gráfico vectorial. A lo largo del curso, los participantes aprenderán los fundamentos esenciales y técnicas avanzadas para crear diseños gráficos de alta calidad y profesionalismo."
+                        descripcion="En este curso Photoshop te equipará con las habilidades necesarias para editar imágenes digitalmente, crear gráficos impresionantes y mejorar tus habilidades creativas en el mundo del diseño y la fotografía digital."
                         imagen={primeraFoto}
                         />
 
@@ -59,10 +59,13 @@ export function Photoshop(){
                                 />
                             </div>
                             <DurationDate
-                            titulo1="Duración"
-                            descripcion1="36 horas académicas (1 mes aproximadamente)"
-                            titulo2="Horarios"
-                            descripcion2="Proximamente"
+                            parrafo1="Jóvenes a mas "
+                            parrafo2="de 18 años a mas"
+                            parrafo3="Martes y Jueves de"
+                            parrafo4="7:00 a 9:30pm"
+                            parrafo5="1"
+                            parrafo6="mes"
+                            parrafo7="Próximamente"
                             />
                             <h1>Plan de Estudios</h1>
                             <Plan

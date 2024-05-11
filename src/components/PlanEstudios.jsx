@@ -3,7 +3,6 @@ import '../css/PlanEstudios.css'
 export function Plan(props){
 
     var modo = props.modo
-    console.log(modo)
     if(modo === "AutoCad"){
         return(
             <div className="Plan-container">

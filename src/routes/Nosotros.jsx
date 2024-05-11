@@ -1,12 +1,21 @@
 import '../css/Nosotros.css'
 import bodyNosotros from '../img/bodyNosotros.png'
+import Nosotros_2 from '../img/Nosotros/Nosotros_2.jpg'
+import Nosotros_3 from '../img/Nosotros/Nosotros_3.jpg'
+import Nosotros_4 from '../img/Nosotros/Nosotros_4.jpg'
+
 import { Footer } from '../components/Footer'
 import { BeneficioNosotros } from '../components/BeneficioNosotros'
 
 export function Nosotros(){
     return(
         <div className="nosotros-container">
-            <img src={bodyNosotros} alt="nosotros" className='bodyNosotros' />
+            <div className='slide-box'>
+                <li className='slide-item'><img src={bodyNosotros} alt="nosotros" className='bodyNosotros' /></li>
+                <li className='slide-item'><img src={Nosotros_2} alt="nosotros" className='bodyNosotros' /></li>
+                <li className='slide-item'><img src={Nosotros_3} alt="nosotros" className='bodyNosotros' /></li>
+                <li className='slide-item'><img src={Nosotros_4} alt="nosotros" className='bodyNosotros' /></li>
+            </div>
             <h1 className='tituloNosotros'>Nosotros</h1>
             <div className='explorandoZaitex'>
                 <h1>Explorando ZAI TEX</h1>

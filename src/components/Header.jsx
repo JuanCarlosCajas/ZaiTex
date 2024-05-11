@@ -24,11 +24,9 @@ export function Header(){
     const [imageUrl, setImageUrl] = useState('');
 
     useEffect(() => {
-        console.log(location)
         // Actualiza el src de la imagen cuando la ubicación cambia
         if(location.pathname == '/nosotros'){
             setImageUrl('nosotros')
-            console.log(location)
         }
         else if (location.pathname == '/'){
             setImageUrl('inicio')
@@ -46,7 +44,10 @@ export function Header(){
         ){
             setImageUrl('cursos')
         }
-        else if (location.pathname == '/talleres'){
+        else if (location.pathname == '/talleres'
+            || location.pathname == '/talleres/dibujo-tradicional'
+            || location.pathname == '/talleres/ilustracion-digital'
+        ){
             setImageUrl('talleres')
         }
         else if (location.pathname == '/biblioteca'){

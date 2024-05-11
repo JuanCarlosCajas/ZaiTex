@@ -14,6 +14,8 @@ import { AutoCad } from './routes/CursoAutoCad'
 import { Marketing } from './routes/CursoMarketing'
 import { CorelDraw } from './routes/CursoCorelDraw'
 import { Ilustrator } from './routes/CursoIlustrator'
+import { TallerIlustracionDigital } from './routes/TallerIlustracionDigital'
+import { TallerDibujoTradicional } from './routes/TallerDibujoTradicional'
 
 function App() {
 
@@ -35,6 +37,8 @@ function App() {
         <Route path='/cursos/software/coreldraw' element={ <CorelDraw/> }></Route>
         <Route path='/cursos/software/illustrator' element={ <Ilustrator/> }></Route>
         <Route path='/talleres' element={ <Talleres/> }></Route>
+        <Route path='/talleres/dibujo-tradicional' element={ <TallerDibujoTradicional/> }></Route>
+        <Route path='/talleres/ilustracion-digital' element={ <TallerIlustracionDigital/> }></Route>
         <Route path='/biblioteca' element={ <Biblioteca/> }></Route>
         <Route path="/*" element={ <Navigate to='/'/> }></Route>
       </Routes>

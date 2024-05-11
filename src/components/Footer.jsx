@@ -10,13 +10,13 @@ export function Footer(props){
                     <section className='atencion-container'>
                         <img src={footerZaitex} className='footer-zaitex-logo' alt="zaitex-footer" />
                         <div className="atencion-alumno">
-                            <h1>Atención al Alumno</h1>
+                            <h1>Servicio al Estudiante</h1>
                             <p>Lunes - Sabado : 8:00 am - 8:00 pm</p>
                             <p>WhatsApp : 980 417 642</p>
-                            <p>E-mail : admi@zai-tex.com</p>
+                            <p>E-mail : edu@zai-tex.com</p>
                         </div>
                         <div className="atencion-academica">
-                            <h1>Secretaría Académica</h1>
+                            <h1>Admisión</h1>
                             <p>Lunes - Sabado : 8:00 am - 8:00 pm</p>
                             <p>WhatsApp : 945 908 269</p>
                             <p>E-mail : info@zai-tex.com</p>

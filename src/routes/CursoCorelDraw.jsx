@@ -59,10 +59,13 @@ export function CorelDraw(){
                             </div>
 
                             <DurationDate
-                            titulo1="Duración"
-                            descripcion1="36 horas académicas (1 mes aproximadamente)"
-                            titulo2="Horarios"
-                            descripcion2="Proximamente"
+                            parrafo1="Adolecente a mas "
+                            parrafo2="de 18 años a mas"
+                            parrafo3="Martes y Jueves"
+                            parrafo4="7:45 pm a 10:00 pm"
+                            parrafo5="1"
+                            parrafo6="mes"
+                            parrafo7="Próximamente"
                             />
 
                             <h1>Plan de Estudios</h1>

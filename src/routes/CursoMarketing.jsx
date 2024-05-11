@@ -38,7 +38,7 @@ export function Marketing(){
                         />
 
                         <div className='bodyCourse-container'>
-                        <h1>¿Por qué estudiar Marketing Digital en ZaiTex?</h1>
+                            <h1>¿Por qué estudiar Marketing Digital en ZaiTex?</h1>
                             <div className='Benefit-container'>
                                 <BenefitItem
                                 imagen={primerBeneficio}
@@ -56,12 +56,17 @@ export function Marketing(){
                                 descripcion="Estrategias y técnicas para mejorar la visibilidad y el ranking de un sitio web en los resultados de búsqueda orgánica de los motores de búsqueda como Google."
                                 />
                             </div>
+
                             <DurationDate
-                            titulo1="Duración"
-                            descripcion1="24 horas académicas"
-                            titulo2="Horarios"
-                            descripcion2="Proximamente"
+                            parrafo1="Adolecente a mas "
+                            parrafo2="de 18 años a mas"
+                            parrafo3="Martes y Jueves de"
+                            parrafo4="7:00 pm a 9:30 pm"
+                            parrafo5="1"
+                            parrafo6="mes"
+                            parrafo7="Próximamente"
                             />
+
                             <h1>Plan de Estudios</h1>
                             <Plan
                             modo="marketingDigital"

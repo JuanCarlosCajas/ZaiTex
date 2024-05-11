@@ -28,7 +28,7 @@ export function AutoCad(){
                     </aside>
                     <main className='Course'>
                         <div className='brochure-container'>
-                            <button type="button" className='brochure-button'>Brochure</button>
+                            <button type="button" className='brochure-button'>Plan de Estudios</button>
                         </div>
 
                         <AboutCourse 
@@ -56,10 +56,13 @@ export function AutoCad(){
                                 />
                             </div>
                             <DurationDate
-                            titulo1="Duración"
-                            descripcion1="40 horas académicas (1 mes aproximadamente)"
-                            titulo2="Horarios"
-                            descripcion2="Proximamente"
+                            parrafo1="Adolecente a mas "
+                            parrafo2="de 18 años a mas"
+                            parrafo3="Sábados de"
+                            parrafo4="Proximamente"
+                            parrafo5="1"
+                            parrafo6="mes"
+                            parrafo7="Próximamente"
                             />
                             <h1>Plan de Estudios</h1>
                             <Plan
