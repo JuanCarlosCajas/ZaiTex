@@ -1,6 +1,6 @@
 import './css/Body.css'
 import persona from './img/persona_1.png'
-import cuerpo from './img/body.png'
+import cuerpo from './img/prueba.png'
 import { CartaBeneficios } from './components/CartaBeneficios'
 import primerBeneficio from './img/primerBeneficio.png'
 import segundoBeneficio from './img/segundoBeneficio.png'
