@@ -30,7 +30,7 @@ export function Photoshop(){
                     </aside>
                     <main className='Course'>
                         <div className='brochure-container'>
-                            <button type="button" className='brochure-button'>Brochure</button>
+                            <a href='https://drive.google.com/file/d/1nvHQ9pRHZd1hx4G5u-cIY1qb0cuRqjit/view' target='_blank' className='brochure-button'>Plan de Estudios</a>
                         </div>
 
                         <AboutCourse 

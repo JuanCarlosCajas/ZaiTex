@@ -55,18 +55,6 @@ export function Header(){
         }
     },[location]);
 
-    
-    /*
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            document.getComputedStyle($circulo, '::before' ).style.background = "green";
-        } else {
-            document.querySelector(".header-container").style.background = "red";
-        }
-    }
-    */
     window.addEventListener('DOMContentLoaded', function(){
 
         const list = document.querySelectorAll('.list')

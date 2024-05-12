@@ -58,6 +58,7 @@ input[type="email"]{
     margin-bottom: 13px;
     padding-left: 50px;
     background-color: #EEEEEE;
+    font-size: 16px;
 }
 
 input[type="checkbox"]{
@@ -79,4 +80,19 @@ input[type="submit"]{
 
 label{
     font-size: 13px;
+}
+
+#talleres{
+    font-size: 16px;
+    width: 440px;
+    padding-left: 50px;
+    height: 45px;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    margin-left: -10PX;
+    border: none;
+}
+
+#talleres option{
+    background-color: #EEEEEE;
 }

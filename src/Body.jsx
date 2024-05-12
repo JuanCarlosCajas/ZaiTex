@@ -72,6 +72,7 @@ export function Body(){
                 habilidades y conocimientos de manera
                 eficiente en poco tiempo."
                 color="#FFDEB8"
+                contrast="#FFA337"
                 />
                 <Ofrecemos 
                 titulo="Talleres"
@@ -80,6 +81,7 @@ export function Body(){
                 impulsando tus habilidades para destacar
                 en tu carrera."
                 color="#D9D9D9"
+                contrast="#9D9D9D"
                 />
                 <Ofrecemos 
                 titulo="Programas"
@@ -88,6 +90,7 @@ export function Body(){
                 ambiciosos que desean dominar un área
                 específica en tan solo 12 meses."
                 color="#FFAEAE"
+                contrast="#FD2626"
                 />
             </section>
             <div className="proximamente">

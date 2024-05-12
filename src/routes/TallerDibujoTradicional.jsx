@@ -24,7 +24,7 @@ export function TallerDibujoTradicional(){
                     </aside>
                     <main className='Course'>
                         <div className='brochure-container'>
-                            <button type="button" className='brochure-button'>Plan de Estudios</button>
+                            <a href='https://drive.google.com/file/d/1XiP2NHepH51e8ogT25zciHaspwzB6MDv/view' target='_blank' className='brochure-button'>Plan de Estudios</a>
                         </div>
 
                         <AboutCourse

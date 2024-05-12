@@ -35,3 +35,16 @@
     font-size: 14px;
     text-align: justify;
 }
+
+.BeneItem-container:hover .BeneItem-header{
+    filter: grayscale(1);
+}
+
+.BeneItem-container:hover .BeneItem-body h1{
+    color: black;
+}
+
+.BeneItem-container:hover .BeneItem-body{
+    color: black;
+    background-color: #ADADAD;
+}

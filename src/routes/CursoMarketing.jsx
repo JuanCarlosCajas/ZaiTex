@@ -28,7 +28,7 @@ export function Marketing(){
                     </aside>
                     <main className='Course'>
                         <div className='brochure-container'>
-                            <button type="button" className='brochure-button'>Brochure</button>
+                            <a href='https://drive.google.com/file/d/1-YJD8aLcgr1QMKpY6ncplPwQCK4OgzVi/view' target='_blank' className='brochure-button'>Plan de Estudios</a>
                         </div>
 
                         <AboutCourse 

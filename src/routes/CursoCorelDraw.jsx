@@ -29,7 +29,7 @@ export function CorelDraw(){
                     </aside>
                     <main className='Course'>
                         <div className='brochure-container'>
-                            <button type="button" className='brochure-button'>Brochure</button>
+                            <a href='https://drive.google.com/file/d/1ifSdegk0rUhngHVv6t-PE4cwPDhslQMX/view' target='_blank' className='brochure-button'>Plan de Estudios</a>
                         </div>
 
                         <AboutCourse 

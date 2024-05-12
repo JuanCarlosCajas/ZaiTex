@@ -9,4 +9,10 @@
     line-height: 2;
     text-align: justify;
     text-wrap: wrap;
+    cursor: default;
+}
+
+.ofre-container:hover{
+    color: #fff;
+    filter: saturate(8);
 }

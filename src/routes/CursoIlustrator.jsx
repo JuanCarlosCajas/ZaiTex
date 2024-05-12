@@ -30,7 +30,7 @@ export function Ilustrator(){
                     </aside>
                     <main className='Course'>
                         <div className='brochure-container'>
-                            <button type="button" className='brochure-button'>Brochure</button>
+                            <a href='https://drive.google.com/file/d/1I3puVROMLVJsKJ1ng0-j8RdqOjXy7S-6/view' target='_blank' className='brochure-button'>Plan de Estudios</a>
                         </div>
 
                         <AboutCourse

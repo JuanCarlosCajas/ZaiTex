@@ -28,7 +28,8 @@ export function AutoCad(){
                     </aside>
                     <main className='Course'>
                         <div className='brochure-container'>
-                            <button type="button" className='brochure-button'>Plan de Estudios</button>
+                            <a href='https://drive.google.com/file/d/1_45EQe0QS6KmUE1ZmilWohZIa0hLbX2k/view' target='_blank' className='brochure-button'>Plan de Estudios</a>
+                            {/*<button type="button" className='brochure-button'>Plan de Estudios</button>*/}
                         </div>
 
                         <AboutCourse 

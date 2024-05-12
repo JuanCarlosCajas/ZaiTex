@@ -10,6 +10,11 @@ import { SemiFooter } from '../components/SemiFooter'
 import { Footer } from '../components/Footer'
 
 export function TallerIlustracionDigital(){
+
+    window.addEventListener('DOMContentLoaded', function(){
+        const $brochureBtn = document.querySelector('.brochure-button')
+    })
+
     return(
         <>
             <div className='Course-container'>
@@ -23,7 +28,7 @@ export function TallerIlustracionDigital(){
                     </aside>
                     <main className='Course'>
                         <div className='brochure-container'>
-                            <button type="button" className='brochure-button'>Plan de Estudios</button>
+                            <a href='https://drive.google.com/file/d/1WOkb9ahXAZPH0kzIfoISl4SyMsV-PfOB/view' target='_blank' className='brochure-button'>Plan de Estudios</a>
                         </div>
 
                         <AboutCourse
@@ -41,7 +46,6 @@ export function TallerIlustracionDigital(){
                             parrafo6="meses"
                             parrafo7="Próximamente"/>
                         </div>
-                        
 
                         <div className='secondTitle'>
                             <strong>CONOCE</strong><span>NUESTROS OTROS TALLERES</span>

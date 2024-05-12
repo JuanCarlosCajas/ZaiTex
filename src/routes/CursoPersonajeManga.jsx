@@ -28,7 +28,7 @@ export function PersonajeManga(){
                     </aside>
                     <main className='Course'>
                         <div className='brochure-container'>
-                            <button type="button" className='brochure-button'>Brochure</button>
+                            <a href='https://drive.google.com/file/d/1Vxhr5W_zwpZdZ2eea9nKpXDO3mX6zenc/view' target='_blank' className='brochure-button'>Plan de Estudios</a>
                         </div>
 
                         <AboutCourse 
