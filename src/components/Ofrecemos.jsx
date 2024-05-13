@@ -1,21 +1,25 @@
+import { useState } from 'react'
 import '../css/Ofrecemos.css'
 
 export function Ofrecemos(props){
-    const styleOfrecemos = {
-        backgroundColor: props.color
-    }
-    
-    window.addEventListener('DOMContentLoaded', () => {
-        const $ofre = document.querySelector('.ofre-container')
 
-        $ofre.addEventListener('mouseover', function(){
-            console.log("Hola")
-            $ofre.style.backgroundColor = props.contrast
-        })
-    })
+    const [color, setColor] = useState(props.color)
+    
+    const ColorInicial = () => {
+        setColor(props.color)
+    }
+
+    const cambioColor = (event) => {
+        setColor(props.contrast)
+    }
 
     return(
-        <div style={styleOfrecemos} className="ofre-container">
+        <div 
+        style={{backgroundColor : color}} 
+        onMouseOver={cambioColor}
+        onMouseOut={ColorInicial} 
+        id="ofre" 
+        className="ofre-container">
             <h1>{props.titulo}</h1>
             <p>{props.texto}</p>
         </div>

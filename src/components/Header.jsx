@@ -1,5 +1,7 @@
 import '../css/Header.css'
+
 import logo from '../img/zaitex-logo.png'
+import logoActivo from '../img/zaitex-logoActivo.png'
 
 import casaActivo from '../img/home-activo.svg'
 import casaDesactivado from '../img/home-desactivado.svg'
@@ -22,6 +24,21 @@ export function Header(){
 
     const location = useLocation();
     const [imageUrl, setImageUrl] = useState('');
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        function handleScroll() {
+            const scrollTop = window.scrollY;
+            setIsScrolled(scrollTop > 0);
+        }
+    
+        window.addEventListener('scroll', handleScroll);
+        
+        // Limpia el evento de desplazamiento cuando el componente se desmonta
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     useEffect(() => {
         // Actualiza el src de la imagen cuando la ubicación cambia
@@ -31,28 +48,17 @@ export function Header(){
         else if (location.pathname == '/'){
             setImageUrl('inicio')
         }
-        else if (location.pathname == '/cursos' 
-            || location.pathname == '/cursos/software'
-            || location.pathname == '/cursos/software/illustrator'
-            || location.pathname == '/cursos/software/photoshop'
-            || location.pathname == '/cursos/software/coreldraw'
-            || location.pathname == '/cursos/especialidades'
-            || location.pathname == '/cursos/especialidades/autocad'
-            || location.pathname == '/cursos/especialidades/marketing'
-            || location.pathname == '/cursos/ilustracion'
-            || location.pathname == '/cursos/ilustracion/personajes-de-manga'
-        ){
+        else if (location.pathname.includes('cursos')){
             setImageUrl('cursos')
         }
-        else if (location.pathname == '/talleres'
-            || location.pathname == '/talleres/dibujo-tradicional'
-            || location.pathname == '/talleres/ilustracion-digital'
-        ){
+        else if (location.pathname.includes('talleres')){
             setImageUrl('talleres')
         }
         else if (location.pathname == '/biblioteca'){
             setImageUrl('biblioteca')
         }
+        window.scrollTo({top: 0, behavior: 'smooth'});
+
     },[location]);
 
     window.addEventListener('DOMContentLoaded', function(){
@@ -72,17 +78,15 @@ export function Header(){
 
     })
 
-
-    var parte = "ala";
     return (
         
-        <header className="header-container" id='header'>
+        <header className={isScrolled ? "header-container top" : "header-container"} id='header'>
             <div className='cubridor-header'></div>
             <div className="right-wall"></div>
             <div className="left-wall"></div>
             { /* Aqui va el logo de la pagina */ }
             <Link to='/' className="logo-container">
-                <img src={logo} alt="zaitex-logo" className="logo-zaitex"/>
+                <img src={isScrolled ? logoActivo : logo} alt="zaitex-logo" className="logo-zaitex"/>
             </Link>
             <nav>
                 {/* Lista de iconos */}
@@ -107,7 +111,7 @@ export function Header(){
                     </NavLink>
                     <NavLink to='/biblioteca' className="biblioteca-btn list">
                         <img src={imageUrl == 'biblioteca' ? bibliotecaActivo : bibliotecaDesactivado} alt="bilbioteca" />
-                        <span className="txtBiblioteca">Biblioteca</span>
+                        <span className="txtBiblioteca">Proyectos</span>
                     </NavLink>
 
                     <div className='circulo'></div>

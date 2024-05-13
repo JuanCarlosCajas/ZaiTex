@@ -1,11 +1,27 @@
-.form{
-    position: relative;
+.ruta{
+    position: -webkit-sticky;
+    position: sticky;
+
+    top: 400px;
     width: 520px;
     height: max-content;
     background-color: white;
     box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.4);
     border-radius: 30px;
-    transform: translateY(0px);
+    transform: translateY(-100px);
+}
+
+.form{
+    position: -webkit-sticky; 
+    position: sticky;
+
+    width: 520px;
+    height: max-content;
+    background-color: white;
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    top: 450px;
+    transform: translateY(-100px);
 }
 
 .header-form{
@@ -76,6 +92,10 @@ input[type="submit"]{
     border: none;
     background-color: #1962EC;
     color: #fff;
+}
+
+.submitBtn:hover{
+    background-color: #0E3989;
 }
 
 label{

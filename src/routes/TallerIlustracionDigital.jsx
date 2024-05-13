@@ -58,7 +58,7 @@ export function TallerIlustracionDigital(){
                             imagen={DibujoTradicional}
                             />
                         </div>
-                        <SemiFooter curso="Ilustración Digital"/>
+                        <SemiFooter tipo="Taller" curso="Ilustración Digital"/>
                     </main>
                 </section>
                 <Footer modo="completo" />

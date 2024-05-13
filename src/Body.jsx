@@ -7,10 +7,17 @@ import Inicio_3 from './img/Inicio/Inicio_3.jpg'
 import Inicio_4 from './img/Inicio/Inicio_4.jpg'
 
 import { CartaBeneficios } from './components/CartaBeneficios'
+
 import primerBeneficio from './img/primerBeneficio.png'
 import segundoBeneficio from './img/segundoBeneficio.png'
 import tercerBeneficio from './img/tercerBeneficio.png'
 import cuartoBeneficio from './img/cuartoBeneficio.png'
+
+import primerBeneficioActivo from './img/Inicio/primerBeneficioActivo.png'
+import segundoBeneficioActivo from './img/Inicio/segundoBeneficioActivo.png'
+import tercerBeneficioActivo from './img/Inicio/tercerBeneficioActivo.png'
+import cuartoBeneficioActivo from './img/Inicio/cuartoBeneficioActivo.png'
+
 import { Ofrecemos } from './components/Ofrecemos'
 import { Footer } from './components/Footer'
 
@@ -33,7 +40,8 @@ export function Body(){
             <div className='beneficios-background'>
                 <h1>Beneficios</h1>
                 <section className='beneficios-container'>
-                    <CartaBeneficios src={primerBeneficio} 
+                    <CartaBeneficios src={primerBeneficio}
+                    activo = { primerBeneficioActivo }
                     texto="Nuestra metodología de 
                     enseñanza está a la 
                     vanguardia de las tendencias 
@@ -41,6 +49,7 @@ export function Body(){
                     tipo="caballo"
                     />
                     <CartaBeneficios src={segundoBeneficio}
+                    activo = { segundoBeneficioActivo }
                     texto="Establecerás conexiones
                     valiosas con tus compañeros
                     de clase, profesores y
@@ -48,6 +57,7 @@ export function Body(){
                     tipo="personas"
                     />
                     <CartaBeneficios src={tercerBeneficio}
+                    activo={ tercerBeneficioActivo }
                     texto="Estamos comprometidos con 
                     proporcionarte los recursos 
                     necesarios para que puedas 
@@ -55,6 +65,7 @@ export function Body(){
                     tipo="blue"
                     />
                     <CartaBeneficios src={cuartoBeneficio} 
+                    activo={ cuartoBeneficioActivo }
                     texto="Contamos con un equipo de
                     instructores altamente
                     calificados y apasionados en

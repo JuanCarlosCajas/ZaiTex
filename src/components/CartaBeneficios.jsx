@@ -1,11 +1,23 @@
 
+import { useState } from 'react'
 import '../css/CartaBeneficios.css'
 
 export function CartaBeneficios(parametros){
+
+    const[imagen, setImagen] = useState(parametros.src)
+
+    function activarImagen(){
+        setImagen(parametros.activo)
+    }
+
+    function desactivarImagen(){
+        setImagen(parametros.src)
+    }
+
     if(parametros.tipo == "personas"){
 
         const estiloImagen = {
-            paddingLeft: '5px',
+            paddingLeft: '3px',
             marginTop: '0px',
         }
         const estiloTexto = {
@@ -13,8 +25,8 @@ export function CartaBeneficios(parametros){
         }
 
         return(
-            <div className='beneficio'>
-                <img src={parametros.src} width={"65px"} style={estiloImagen} alt="beneficio" className='imagen-beneficio'/>
+            <div className='beneficio' onMouseOver={activarImagen} onMouseOut={desactivarImagen}>
+                <img src={imagen} width={"65px"} style={estiloImagen} alt="beneficio" className='imagen-beneficio'/>
                 <p style={estiloTexto}>{parametros.texto}</p>
             </div>    
         )
@@ -26,8 +38,8 @@ export function CartaBeneficios(parametros){
         }
 
         return(
-            <div className='beneficio'>
-                <img src={parametros.src} width={"45px"} alt="beneficio" className='imagen-beneficio'/>
+            <div className='beneficio' onMouseOut={desactivarImagen} onMouseOver={activarImagen}>
+                <img src={imagen} width={"45px"} alt="beneficio" className='imagen-beneficio'/>
                 <p style={estiloTexto}>{parametros.texto}</p>
             </div>
         )
@@ -35,15 +47,15 @@ export function CartaBeneficios(parametros){
     else if(parametros.tipo == "blue"){
         const estiloImagen = {
             paddingLeft: '5px',
-            paddingTop: '10px'
+            paddingTop: '3px'
         }
 
         const estiloTexto = {
             paddingTop: '15px'
         }
         return(
-            <div className='beneficio'>
-                <img src={parametros.src} width={"55px"} style={estiloImagen} alt="beneficio" className='imagen-beneficio'/>
+            <div className='beneficio' onMouseOut={desactivarImagen} onMouseOver={activarImagen} >
+                <img src={imagen}  width={"55px"} style={estiloImagen} alt="beneficio" className='imagen-beneficio'/>
                 <p style={estiloTexto}>{parametros.texto}</p>
             </div>   
         )
@@ -51,6 +63,7 @@ export function CartaBeneficios(parametros){
     else if(parametros.tipo == "estudiante"){
         const estiloImagen = {
             paddingLeft: '0px',
+            marginLeft: '-2px',
             paddingTop: '0px'
         }
 
@@ -58,8 +71,8 @@ export function CartaBeneficios(parametros){
             paddingTop: '33px'
         }
         return(
-            <div className='beneficio'>
-                <img src={parametros.src} width={"75px"} style={estiloImagen} alt="beneficio" className='imagen-beneficio'/>
+            <div className='beneficio' onMouseOut={desactivarImagen} onMouseOver={activarImagen} >
+                <img src={imagen} width={"75px"} style={estiloImagen} alt="beneficio" className='imagen-beneficio'/>
                 <p style={estiloTexto}>{parametros.texto}</p>
             </div>   
         )

@@ -92,7 +92,7 @@ export function Ilustrator(){
                             beneficio16="Exportación de proyectos y prácticas de flujo de trabajo."
                             />
                         </div>
-                        <SemiFooter curso="Illustrator"/>
+                        <SemiFooter tipo="Curso" curso="Illustrator"/>
                     </main>
                 </section>
                 <Footer modo="completo"/>

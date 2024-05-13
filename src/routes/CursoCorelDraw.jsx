@@ -93,7 +93,7 @@ export function CorelDraw(){
                             beneficio15="Preparación y presentación de trabajos."
                             beneficio16="Evaluación y retroalimentación final."/>
                         </div>
-                        <SemiFooter curso="Corel Draw"/>
+                        <SemiFooter tipo="Curso" curso="Corel Draw"/>
                     </main>
                 </section>
                 <Footer modo="completo"/>

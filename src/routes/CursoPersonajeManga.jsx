@@ -91,7 +91,7 @@ export function PersonajeManga(){
                             />
                         </div>
 
-                        <SemiFooter curso="Creación de personajes estilo manga e ilustración con Adobe Illustrator" />
+                        <SemiFooter tipo="Curso" curso="Creación de personajes estilo manga e ilustración con Adobe Illustrator" />
                     </main>
                 </section>
                 <Footer modo="completo" />

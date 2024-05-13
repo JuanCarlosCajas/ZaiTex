@@ -1,14 +1,15 @@
 import '../css/Formulario.css'
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser'
 
 export function Formulario(){
 
     var path = location.pathname
-    const form = useRef();
+
+    const form = useRef()
 
     const sendEmail = (e) => {
-        e.preventDefault();
+        e.preventDefault()
         emailjs
             .sendForm('service_95hx4qp', 'template_oy8cr6q', form.current, {
                 publicKey: 'wooy2Olw9mEt8FwbB',
@@ -22,14 +23,14 @@ export function Formulario(){
                     document.getElementById('respuesta').innerHTML = "Pedido realizado correctamente :D"
                 },
             (error) => {
-                console.log('FAILED...', error.text);
+                console.log('FAILED...', error.text)
             },
         );
     }
     
     if(path.includes('talleres')){
         return (
-            <form ref={form} onSubmit={sendEmail} className='form'>
+            <form ref={form} onSubmit={sendEmail} className={path.includes('/talleres/') ? 'form' : 'ruta'}>
                 <div className='header-form'>
                     <h1>¡ MATRICULA GRATIS !</h1>
                 </div>
@@ -49,13 +50,13 @@ export function Formulario(){
                     </p>
                     <div><p id='respuesta'></p></div>
                 </div>
-                <input type="submit" value="Solicitar"/>
+                <input type="submit" className='submitBtn' value="Solicitar"/>
             </form>
         )
     }
     else if(path.includes('cursos')){
         return (
-            <form ref={form} onSubmit={sendEmail} className='form'>
+            <form ref={form} onSubmit={sendEmail} className={path.includes('/cursos/software/') || path.includes('/cursos/ilustracion/') || path.includes('/cursos/especialidades/') ? "form" : "ruta"}>
                 <div className='header-form'>
                     <h1>¡ MATRICULA GRATIS !</h1>
                 </div>
@@ -79,7 +80,7 @@ export function Formulario(){
                     </p>
                     <div><p id='respuesta'></p></div>
                 </div>
-                <input type="submit" value="Solicitar"/>
+                <input type="submit" className='submitBtn' value="Solicitar"/>
             </form>
         )
     }

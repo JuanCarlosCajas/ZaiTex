@@ -9,7 +9,7 @@ export function SemiFooter(props){
     return(
         <div className="SemiFooter">
             <h1>ZaiTex Otorga</h1>
-            <p className='paragraph'>Certificado virtual en el Curso de <span><strong>{props.curso}</strong></span></p>
+            <p className='paragraph'>Certificado virtual en el { props.tipo } de <span><strong>{props.curso}</strong></span></p>
             <h1>Beneficios ZaiTex</h1>
             <section className='SemiFooter-container'>
                 <div className='SemiFooter-item'>

@@ -97,7 +97,7 @@ export function Marketing(){
                             />
                         </div>
 
-                        <SemiFooter curso="Marketing digital" />
+                        <SemiFooter tipo="Curso" curso="Marketing digital" />
                     </main>
                 </section>
                 <Footer modo="completo" />

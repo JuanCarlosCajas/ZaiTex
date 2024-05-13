@@ -90,7 +90,7 @@ export function AutoCad(){
                             beneficio16="Preparación de presentaciones finales."
                             />
                         </div>
-                        <SemiFooter curso="AutoCAD para Interiores"/>
+                        <SemiFooter tipo="Curso" curso="AutoCAD para Interiores"/>
                     </main>
                 </section>
                 <Footer modo="completo"/>

@@ -16,11 +16,14 @@ import { CorelDraw } from './routes/CursoCorelDraw'
 import { Ilustrator } from './routes/CursoIlustrator'
 import { TallerIlustracionDigital } from './routes/TallerIlustracionDigital'
 import { TallerDibujoTradicional } from './routes/TallerDibujoTradicional'
+import { Redes } from './components/Redes'
+
 
 function App() {
 
   return (
     <>
+      <Redes/>
       <Header/>
       
       <Routes>

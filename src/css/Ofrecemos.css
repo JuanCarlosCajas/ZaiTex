@@ -14,5 +14,5 @@
 
 .ofre-container:hover{
     color: #fff;
-    filter: saturate(8);
+    transition: 0.5s;
 }

@@ -92,7 +92,7 @@ export function Photoshop(){
                             beneficio16="Consejos y técnicas avanzadas para mejorar la eficiencia en la creación de mockups y presentaciones."
                             />
                         </div>
-                        <SemiFooter curso="Photoshop"/>
+                        <SemiFooter tipo="Curso" curso="Photoshop"/>
                     </main>
                 </section>
                 <Footer modo="completo"/>
