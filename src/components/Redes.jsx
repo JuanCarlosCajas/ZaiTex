@@ -12,15 +12,15 @@ export function Redes(){
     return(
         <div className="redes-container">
             <div className='links-container'>
-                <a href="#" className='link-item'><img src={logoFacebook} alt="" width={"13px"} /></a>
-                <a href="#" className='link-item'><img src={logoTwitter} alt="" width={"20px"} /></a>
-                <a href="#" className='link-item'><img src={logoInstagram} alt="" width={"23px"} /></a>
-                <a href="#" className='link-item'><img src={logoYoutube} alt="" width={"23px"} /></a>
-                <a href="#" className='link-item'><img src={logoTiktok} alt="" width={"20px"} /></a>
+                <a href="#" className='link-item'><img src={logoFacebook} alt="" width={"10spx"} /></a>
+                <a href="#" className='link-item'><img src={logoTwitter} alt="" width={"15px"} /></a>
+                <a href="#" className='link-item'><img src={logoInstagram} alt="" width={"18px"} /></a>
+                <a href="#" className='link-item'><img src={logoYoutube} alt="" width={"18px"} /></a>
+                <a href="#" className='link-item'><img src={logoTiktok} alt="" width={"15px"} /></a>
             </div>
             <div className='Sesion-container'>
                 <img src={logoUser} alt="" width={"20px"}/>
-                <a href="#" className='sesion-item'>Inicio Sesion</a>
+                <a href="#" className='sesion-item'>Inicio Sesión</a>
             </div>
         </div>
     )
