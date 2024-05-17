@@ -26,7 +26,7 @@ export function Body(){
     return(
         <>
             <div className='slideInicio-box'>
-                <li className='slideInicio-item'><img src={cuerpo} alt="body" className='cuerpo-contenedor'/></li>
+                <li className='slideInicio-item'><img src={cuerpo} alt="body" className='cuerpo-contenedor inicio'/></li>
                 <li className='slideInicio-item'><img src={Inicio_2} alt="body" className='cuerpo-contenedor'/></li>
                 <li className='slideInicio-item'><img src={Inicio_3} alt="body" className='cuerpo-contenedor'/></li>
                 <li className='slideInicio-item'><img src={Inicio_4} alt="body" className='cuerpo-contenedor'/></li>

@@ -7,11 +7,15 @@ import Nosotros_4 from '../img/Nosotros/Nosotros_4.jpg'
 import { Footer } from '../components/Footer'
 import { BeneficioNosotros } from '../components/BeneficioNosotros'
 
+import { Header } from "../components/Header";
+import { Redes } from "../components/Redes";
+
 export function Nosotros(){
     return(
+        <>
         <div className="nosotros-container">
             <div className='slide-box'>
-                <li className='slide-item'><img src={bodyNosotros} alt="nosotros" className='bodyNosotros' /></li>
+                <li className='slide-item'><img src={bodyNosotros} alt="nosotros" className='bodyNosotros'/></li>
                 <li className='slide-item'><img src={Nosotros_2} alt="nosotros" className='bodyNosotros' /></li>
                 <li className='slide-item'><img src={Nosotros_3} alt="nosotros" className='bodyNosotros' /></li>
                 <li className='slide-item'><img src={Nosotros_4} alt="nosotros" className='bodyNosotros' /></li>
@@ -77,5 +81,6 @@ export function Nosotros(){
             </div>
             <Footer modo="medio"></Footer>
         </div>
+        </>
     )
 }

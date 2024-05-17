@@ -23,9 +23,9 @@ function App() {
 
   return (
     <>
+
       <Redes/>
       <Header/>
-      
       <Routes>
         <Route path='/' element={ <Inicio/> }></Route>
         <Route path='/nosotros' element={ <Nosotros/> }></Route>

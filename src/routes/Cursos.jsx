@@ -19,7 +19,7 @@ export function Cursos(){
     return(
         <>
             <div className="cursos-container">
-                <img src={cursoHeader} alt="" className='cursoHeader'/>
+                <img src={cursoHeader} alt="" className='cursoHeader cursos'/>
                 <h1 className='tituloCursos'>Cursos</h1>
                 <section className='bodyHeader'>
                     <main className='options-container'>

@@ -13,7 +13,7 @@ export function Talleres(){
     return(
         <>
             <div className='cursos-container'>
-                <img src={headerTaller} alt="" className='cursoHeader' />
+                <img src={headerTaller} alt="" className='cursoHeader talleres'/>
                 <h1 className='tituloTaller'>Talleres</h1>
                 <section className='bodyHeader'>
                     <main className='options-container'>

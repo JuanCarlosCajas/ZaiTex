@@ -1,3 +1,4 @@
+
 import '../css/BeneficioNosotros.css'
 
 export function BeneficioNosotros(props){

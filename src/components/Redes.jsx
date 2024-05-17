@@ -18,6 +18,8 @@ import logoTwitterActivo from '../img/Redes/twitterActivo.svg'
 import logoUser from '../img/Redes/user.svg'
 import { useEffect, useState } from 'react'
 
+import { Link } from 'react-router-dom'
+
 export function Redes(){
 
     const[facebook, setFacebook] = useState("desactivado")
@@ -73,7 +75,7 @@ export function Redes(){
             </div>
             <div className='Sesion-container'>
                 <img src={logoUser} alt="" width={"20px"}/>
-                <a href="#" className='sesion-item'>Inicio Sesión</a>
+                <a href='/login' className='sesion-item'>Inicio Sesión</a>
             </div>
         </div>
     )

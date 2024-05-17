@@ -26,6 +26,7 @@ export function Header(){
     const [imageUrl, setImageUrl] = useState('');
     const [isScrolled, setIsScrolled] = useState(false);
 
+    /* Verifica si no esta en scroll 0 */ 
     useEffect(() => {
         function handleScroll() {
             const scrollTop = window.scrollY;
@@ -57,7 +58,15 @@ export function Header(){
         else if (location.pathname == '/biblioteca'){
             setImageUrl('biblioteca')
         }
-        window.scrollTo({top: 0, behavior: 'smooth'});
+        
+        /* Añadir nuevo path siempre que quieras que no vaya para arriba del todo */ 
+        if(location.pathname == '/cursos/ilustracion'
+            || location.pathname == '/cursos/software' 
+            || location.pathname == '/cursos/especialidades'){
+            return
+        }else{
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
 
     },[location]);
 

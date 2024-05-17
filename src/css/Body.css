@@ -11,6 +11,10 @@ body{
     margin: 0;
 }
 
+.inicio{
+    aspect-ratio: 1440/919;
+}
+
 .slideInicio-box{
     width: 400%;
     display: flex;
