@@ -18,9 +18,23 @@ import logoTwitterActivo from '../img/Redes/twitterActivo.svg'
 import logoUser from '../img/Redes/user.svg'
 import { useEffect, useState } from 'react'
 
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 export function Redes(){
+
+    const location = useLocation()
+
+    const[verRedes, setVerRedes] = useState(true)
+
+    /* Esconde la parte de Redes cuando esté en login */ 
+    useEffect(() => {
+        if(location.pathname.includes('/login')){
+            setVerRedes(false)
+        }
+        else{
+            setVerRedes(true)
+        }
+    }, [location])
 
     const[facebook, setFacebook] = useState("desactivado")
     const[youtube, setYoutube] = useState("desactivado")
@@ -65,7 +79,7 @@ export function Redes(){
     }
     
     return(
-        <div className="redes-container">
+        <div className={verRedes ? "redes-container": "esconder"}>
             <div className='links-container'>
                 <a href="#" className='link-item' onMouseOver={() => activarLogo("facebook")} onMouseOut={() => desactivarLogo("facebook")}><img src={facebook == "desactivado" ? logoFacebook : logoFacebookActivo} alt="" width={"10spx"} /></a>
                 <a href="#" className='link-item' onMouseOver={() => activarLogo("twitter")} onMouseOut={() => desactivarLogo("twitter")}><img src={twitter == "desactivado" ? logoTwitter : logoTwitterActivo} alt="" width={"15px"} /></a>
@@ -75,7 +89,7 @@ export function Redes(){
             </div>
             <div className='Sesion-container'>
                 <img src={logoUser} alt="" width={"20px"}/>
-                <a href='/login' className='sesion-item'>Inicio Sesión</a>
+                <Link to='/login' className='sesion-item'>Inicio Sesión</Link>
             </div>
         </div>
     )

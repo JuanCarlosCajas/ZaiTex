@@ -23,8 +23,21 @@ import { useEffect, useState } from 'react'
 export function Header(){
 
     const location = useLocation();
+
+    const [verHeader, setVerHeader] = useState(true)
+
     const [imageUrl, setImageUrl] = useState('');
     const [isScrolled, setIsScrolled] = useState(false);
+
+    /* Esconde el header cuando entre a login */
+    useEffect(() => {
+        if(location.pathname.includes('/login')){
+            setVerHeader(false)
+        }
+        else{
+            setVerHeader(true)
+        }
+    },[location])
 
     /* Verifica si no esta en scroll 0 */ 
     useEffect(() => {
@@ -89,7 +102,7 @@ export function Header(){
 
     return (
         
-        <header className={isScrolled ? "header-container top" : "header-container"} id='header'>
+        <header className={isScrolled ? "header-container top" : "header-container"} id={verHeader ? "header" : "esconder"}>
             <div className='cubridor-header'></div>
             <div className="right-wall"></div>
             <div className="left-wall"></div>
@@ -120,7 +133,7 @@ export function Header(){
                     </NavLink>
                     <NavLink to='/biblioteca' className="biblioteca-btn list">
                         <img src={imageUrl == 'biblioteca' ? bibliotecaActivo : bibliotecaDesactivado} alt="bilbioteca" />
-                        <span className="txtBiblioteca">Proyectos</span>
+                        <span className="txtBiblioteca">Carreras</span>
                     </NavLink>
 
                     <div className='circulo'></div>

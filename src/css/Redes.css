@@ -7,6 +7,10 @@
     display: flex;
 }
 
+.esconder{
+    display: none;
+}
+
 .links-container{
     width: 50%;
     display: flex;

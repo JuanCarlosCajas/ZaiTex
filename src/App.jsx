@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import { Header } from './components/Header'
 import { Inicio } from './routes/Inicio'
 import { Nosotros } from './routes/Nosotros'
@@ -17,17 +17,31 @@ import { Ilustrator } from './routes/CursoIlustrator'
 import { TallerIlustracionDigital } from './routes/TallerIlustracionDigital'
 import { TallerDibujoTradicional } from './routes/TallerDibujoTradicional'
 import { Redes } from './components/Redes'
-
+import { useEffect, useState } from 'react'
+import { Login } from './routes/Login'
+import { InicioLogin } from './routes/InicioLogin'
+import { HeaderUsuario } from './components/headerUsuario'
+import { HeaderInformacion } from './components/HeaderInformacion'
+import { PruebasAdmin } from './routes/PruebasAdmin'
+import { PagosLogin } from './routes/PagosLogin'
+import { BibliotecaLogin } from './routes/BibliotecaLogin'
+import { DatosUsuarioLogin } from './routes/DatosUsuarioLogin'
 
 function App() {
 
   return (
     <>
 
-      <Redes/>
-      <Header/>
+      { location.pathname.includes('/login/') ? <HeaderUsuario/> : <Redes/> }
+      { location.pathname.includes('/login/') ? <HeaderInformacion/> : <Header/> }
       <Routes>
+        <Route path='/adminPrueba' element={<PruebasAdmin/>}></Route>
         <Route path='/' element={ <Inicio/> }></Route>
+        <Route path='/login' element={ <Login/> }></Route>
+        <Route path='/login/inicio' element={ <InicioLogin/> }></Route>
+        <Route path='/login/biblioteca' element={ <BibliotecaLogin/> }></Route>
+        <Route path='/login/pagos' element={ <PagosLogin/> }></Route>
+        <Route path='/login/datos-personales' element={ <DatosUsuarioLogin/> }></Route>
         <Route path='/nosotros' element={ <Nosotros/> }></Route>
         <Route path='/cursos' element={ <Cursos/> }></Route>
         <Route path='/cursos/ilustracion' element={ <Ilustracion/> }></Route>

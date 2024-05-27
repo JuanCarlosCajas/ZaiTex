@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import '../css/TipoCurso.css'
-import { scrollToElement } from '../hooks/useScroll'
 
 export function TipoCurso(props){
     return (
