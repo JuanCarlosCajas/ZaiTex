@@ -14,7 +14,6 @@ export const Perfil = () => {
     
     const user = useSelector(state => state.user)
 
-    console.log(user.foto_alumno)
     const estiloFotoPerfil = {
         backgroundImage : "url(data:image/jpeg;charset=utf-8;base64,"+ user.foto_alumno+")"
     }

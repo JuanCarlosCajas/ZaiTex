@@ -1,10 +1,8 @@
-import { useLocation } from "react-router-dom";
+import { redirect, useLocation } from "react-router-dom"
 
-import { Api } from "./token";
-
+import { Api } from "./token"
 
 export function useFetch(codigo, contrasena){
-
 
     $.ajax({
         type: "POST",
@@ -13,13 +11,14 @@ export function useFetch(codigo, contrasena){
             response.map((item) => {
                 if(item.codigo_alumno == codigo && item.contrasena == contrasena){
                     console.log(item.codigo_alumno)
+                    console.log(item.contrasena)
                     localStorage.setItem('tokenCorreo', item.codigo_alumno)
                     localStorage.setItem('tokenContrasena', item.contrasena)
-                    window.location.href = "/login/inicio"
+                    window.location.pathname = "/login/inicio"
                 }
             })
         }
-    }); 
+    }) 
 }
 
 

@@ -133,7 +133,7 @@ export function Header(){
                     </NavLink>
                     <NavLink to='/biblioteca' className="biblioteca-btn list">
                         <img src={imageUrl == 'biblioteca' ? bibliotecaActivo : bibliotecaDesactivado} alt="bilbioteca" />
-                        <span className="txtBiblioteca">Carreras</span>
+                        <span className="txtBiblioteca">Carreras Cortas</span>
                     </NavLink>
 
                     <div className='circulo'></div>

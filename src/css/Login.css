@@ -60,8 +60,8 @@
 .ojo-item{
     position: absolute;
     color: black !important;
-    right: 330px;
-    transform: translateY(-14px);
+    margin-bottom: 28px;
+    transform: translateX(179px);
 }
 
 #codigoLogin{

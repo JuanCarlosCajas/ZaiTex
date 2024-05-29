@@ -3,7 +3,7 @@ header("Access-Control-Allow-Origin: *");
 
 require('conexion.php');
 
-$sql = "CALL obtener_alumno()";
+$sql = "CALL MostrarAlumnos()";
 $result = $conn->query($sql);
 
 $alumnos = array();

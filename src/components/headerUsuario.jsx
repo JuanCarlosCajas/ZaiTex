@@ -5,6 +5,7 @@ import { PerfilAlumno } from './PerfilAlumno'
 
 import { useDispatch, useSelector } from 'react-redux'
 import { addUser } from '../redux/slice'
+import { redirect } from 'react-router-dom'
 
 export function HeaderUsuario(){
 
@@ -18,10 +19,13 @@ export function HeaderUsuario(){
         .then(data => {
             setDatos(data)
             dispatch(addUser(data))
-            console.log(user)
+            if(data.codigo_alumno == null || data.codigo_alumno == undefined){
+                window.location.pathname = "/login"
+            }
+            console.log(data.codigo_alumno)
         })
+        
     },[])
-
     return(
         <>
             <header className="HeaderUsuario-container">

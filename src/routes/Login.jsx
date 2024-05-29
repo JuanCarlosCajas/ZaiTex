@@ -35,7 +35,7 @@ export function Login(){
             <img src={backgroundLogin} alt="" className='background-login'/>
             <div className='login'>
                 <img src={logoZaitex} alt="" />
-                <form action="#" className='form-login' onSubmit={(event) => enviandoElementos(event)}>
+                <form className='form-login' onSubmit={(event) => enviandoElementos(event)}>
                     <input type="text" name="codigo" id="codigoLogin" placeholder='Por favor, ingresa tu código de usuario' required/>
                     <label htmlFor="contrasenaLogin" className='ojo-item' onClick={mostrarContraseña}><img src={cambio ? ojoAbierto : ojoCerrado} alt="" className='item-ojo'/></label>
                     <input type={cambio ? "text" : "password"} name="contrasena" id="contrasenaLogin" placeholder='Aquí tu contraseña' required/>

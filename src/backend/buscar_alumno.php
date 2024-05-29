@@ -8,7 +8,7 @@ $codigo_alumno = $_GET["codigo_alumno"];
 $contrasena = $_GET["contrasena"];
 
 // Llamar al procedimiento almacenado
-$sql = "CALL BuscarAlumnoPorCodigo(?, ?)";
+$sql = "CALL BuscarAlumno(?, ?)";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("ss", $codigo_alumno, $contrasena);
 $stmt->execute();

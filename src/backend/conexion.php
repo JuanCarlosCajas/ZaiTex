@@ -1,7 +1,7 @@
 <?php
 
 $servidor = 'localhost';
-$bd = 'zaitex';
+$bd = 'wewqe';
 $usuario = 'root';
 $contrasena = '';
 

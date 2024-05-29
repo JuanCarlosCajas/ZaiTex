@@ -8,7 +8,9 @@ const initialState = {
     dni_alumno : "",
     fecha_registro : "",
     gmail_recuperacion : "",
-    contrasena : ""
+    contrasena : "",
+    sexo : "",
+    contacto : ""
 };
 
 export const userSlice = createSlice({
@@ -16,7 +18,7 @@ export const userSlice = createSlice({
     initialState,
     reducers: {
         addUser: (state, action) => {
-            const { codigo_alumno, nombre_alumno , apellido_alumno, foto_alumno, dni_alumno, fecha_registro, gmail_recuperacion, contrasena } = action.payload;
+            const { codigo_alumno, nombre_alumno , apellido_alumno, foto_alumno, dni_alumno, fecha_registro, gmail_recuperacion, contrasena, sexo, contacto } = action.payload;
             state.codigo_alumno = codigo_alumno;
             state.nombre_alumno = nombre_alumno;
             state.apellido_alumno = apellido_alumno;
@@ -25,6 +27,8 @@ export const userSlice = createSlice({
             state.fecha_registro = fecha_registro;
             state.gmail_recuperacion = gmail_recuperacion;
             state.contrasena = contrasena;
+            state.contacto = contacto;
+            state.sexo = sexo;
         },
     },
 });

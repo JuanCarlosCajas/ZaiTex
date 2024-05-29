@@ -75,18 +75,17 @@ export function HeaderInformacion(){
         setPalanca(!palanca)
     }
 
-    
 
     return(
         <div className={palanca ? "headerInformacion-container palanca" : "headerInformacion-container"}>
             <img src={palanca ? logoZaitexSeleccionado : logoZaitex } alt="" className={palanca ? 'headerInformacion-logo palanca' : 'headerInformacion-logo'}/>
             <nav>
                 <ul className='headerInformacion-options'>
-                    <div className={palanca ? 'cubridor apretar ' + opcion : 'cubridor ' + opcion}></div>
+                    <div className={location.pathname != "/login/datos-personales" ? (palanca ? 'cubridor apretar ' + opcion : 'cubridor ' + opcion) : ""}></div>
                     <Link to='/login/inicio' className={palanca ? 'option-item encoger' : 'option-item'} onClick={switchParaActivarInicio}>
-                        <img src={opcion == "inicio" ? cursoSeleccionado : curso} alt="" />
-                        <p className={palanca ? "guardarParrafo" : ""} style={opcion == "inicio" ? activarTexto : {}}>Mis cursos</p>
-                        <img src={opcion == "inicio" && !palanca? abajoSeleccionado : abajo} alt="" className='abajoLogo'/>
+                        <img src={opcion == "inicio" && location.pathname != "/login/datos-personales" ? cursoSeleccionado : curso} alt="" />
+                        <p className={palanca ? "guardarParrafo" : ""} style={opcion == "inicio" && location.pathname != "/login/datos-personales" ? activarTexto : {}}>Mis cursos</p>
+                        <img src={opcion == "inicio" && !palanca ? abajoSeleccionado : abajo} alt="" className='abajoLogo'/>
                     </Link>
                     <Link to='/login/biblioteca' className={palanca ? 'option-item encoger' : 'option-item'} onClick={switchParaActivarBiblioteca}>
                         <img src={opcion == "biblioteca" ? bibliotecaSeleccionado : biblioteca} alt="" />
