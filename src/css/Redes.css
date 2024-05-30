@@ -12,12 +12,11 @@
 }
 
 .links-container{
-    width: 50%;
+    width: 40%;
     display: flex;
     align-items: center;
-    transform: translateY(0px);
     gap: 10px;
-    padding-left: 140px;
+    transform: translateX(18%);
 }
 
 .links-container .link-item{
@@ -39,9 +38,10 @@
     width: 50%;
     list-style: none;
     text-decoration: none;
-    padding-left: 67%;
     display: flex;
+    justify-content: end;
     align-items: center;
+    cursor: pointer;
 }
 
 .sesion-item{
@@ -49,4 +49,18 @@
     font-size: 18px;
     margin-left: 15px;
     border-bottom: 1px solid white;
+    margin-right: 0.5%;
+}
+
+.Sesion-container:hover .sesion-item{
+    color: #1962EC;
+    border-bottom: 1px solid #1962EC;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 767px) {
+    /* Estilos para celulares */
+    .sesion-item{
+        font-size: 14px;
+    }
 }

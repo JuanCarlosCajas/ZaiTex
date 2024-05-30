@@ -26,3 +26,39 @@ BEGIN
 END//
 
 DELIMITER ;
+
+
+--Procedure para actualizar Alumno
+
+DELIMITER //
+
+CREATE PROCEDURE actualizar_alumno(
+    IN codigo VARCHAR(14),
+    IN nuevo_gmail_recuperacion VARCHAR(30),
+    IN nuevo_sexo VARCHAR(14),
+    IN nuevo_contacto VARCHAR(14)
+)
+BEGIN
+    UPDATE alumno
+    SET
+        gmail_recuperacion = nuevo_gmail_recuperacion,
+        sexo = nuevo_sexo,
+        contacto = nuevo_contacto
+    WHERE codigo_alumno = codigo;
+END//
+
+DELIMITER ;
+
+-- Procedure de Mostrar Matriculas
+DELIMITER //
+
+CREATE PROCEDURE mostrar_matriculas_por_alumno(
+    IN codigo_alumno_param VARCHAR(14)
+)
+BEGIN
+    SELECT *
+    FROM matricula_curso
+    WHERE codigo_alumno = codigo_alumno_param;
+END//
+
+DELIMITER ;

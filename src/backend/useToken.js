@@ -10,8 +10,6 @@ export function useFetch(codigo, contrasena){
         success: function (response) {
             response.map((item) => {
                 if(item.codigo_alumno == codigo && item.contrasena == contrasena){
-                    console.log(item.codigo_alumno)
-                    console.log(item.contrasena)
                     localStorage.setItem('tokenCorreo', item.codigo_alumno)
                     localStorage.setItem('tokenContrasena', item.contrasena)
                     window.location.pathname = "/login/inicio"
@@ -19,6 +17,29 @@ export function useFetch(codigo, contrasena){
             })
         }
     }) 
+}
+
+export function actualizarDatos(codigo, gmail_recuperacion, sexo, contacto){
+
+    const datosActualizados = {
+        codigo_alumno : codigo,
+        gmail_recuperacion : gmail_recuperacion,
+        sexo : sexo,
+        contacto : contacto    
+    }
+
+    $.ajax({
+        type: "POST",
+        url: Api.apiUrl + "actualizar_alumno.php",
+        data: datosActualizados,
+        success: function (response) {
+            console.log("Datos actualizados")
+        },
+        error: function (err) {
+            console.log("Error")
+        }
+
+    });
 }
 
 

@@ -30,8 +30,16 @@ export const userSlice = createSlice({
             state.contacto = contacto;
             state.sexo = sexo;
         },
-    },
+        actualizarUser: (state, action) => {
+            const { gmail_recuperacion, sexo, contacto } = action.payload;
+            state.gmail_recuperacion = gmail_recuperacion;
+            state.sexo = sexo;
+            state.contacto = contacto;
+        }
+    }
 });
 
+
 export const { addUser } = userSlice.actions;
+export const { actualizarUser } = userSlice.actions;
 export default userSlice.reducer;

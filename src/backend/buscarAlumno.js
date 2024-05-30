@@ -11,7 +11,7 @@ export function buscarAlumno(codigo, contrasena){
                 resolve(data)
             }
             else{
-                /*reject('Error' + xhr.status)*/
+                reject('Error' + xhr.status)
             }
         }
         xhr.send()

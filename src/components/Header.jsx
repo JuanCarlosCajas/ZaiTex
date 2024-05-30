@@ -110,12 +110,12 @@ export function Header(){
             <Link to='/' className="logo-container">
                 <img src={isScrolled ? logoActivo : logo} alt="zaitex-logo" className="logo-zaitex"/>
             </Link>
-            <nav>
+            <nav className='nav-header'>
                 {/* Lista de iconos */}
                 <ul className="nav-container">
                     
                     <NavLink to='/' className="home-btn list">
-                        <img src={imageUrl == 'inicio' ? casaActivo : casaDesactivado} alt="home" />
+                        <img src={imageUrl == 'inicio' ? casaActivo : casaDesactivado} className='logo-inicio' alt="home" />
                         <span className="txtInicio">Inicio</span>
                     </NavLink>
                     
@@ -124,15 +124,15 @@ export function Header(){
                         <span className="txtNosotros">Nosotros</span>
                     </NavLink>
                     <NavLink to='/cursos' className="courses-btn list">
-                        <img src={imageUrl == 'cursos' ? cursoActivo : cursoDesactivado} alt="cursos" />
+                        <img src={imageUrl == 'cursos' ? cursoActivo : cursoDesactivado} className='logo-cursos' alt="cursos" />
                         <span className="txtCursos">Cursos</span>
                     </NavLink>
                     <NavLink to='/talleres' className="talleres-btn list">
-                        <img src={imageUrl == 'talleres' ? tallerActivo : tallerDesactivado} alt="talleres"/>
+                        <img src={imageUrl == 'talleres' ? tallerActivo : tallerDesactivado} className='logo-talleres' alt="talleres"/>
                         <span className="txtTalleres">Talleres</span>
                     </NavLink>
                     <NavLink to='/biblioteca' className="biblioteca-btn list">
-                        <img src={imageUrl == 'biblioteca' ? bibliotecaActivo : bibliotecaDesactivado} alt="bilbioteca" />
+                        <img src={imageUrl == 'biblioteca' ? bibliotecaActivo : bibliotecaDesactivado} className='logo-carreras' alt="bilbioteca" />
                         <span className="txtBiblioteca">Carreras Cortas</span>
                     </NavLink>
 

@@ -20,7 +20,7 @@ body{
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  height: 110px;
+  height: 130px;
   transform: translateY(60px);
   transition: 0.4s;
   z-index: 200;
@@ -64,7 +64,7 @@ a{
   justify-content: center;
   float: right;
   width: 750px;
-  margin-top: 27px;
+  margin-top: 23px;
   margin-left: 0px;
   gap: 16%;
 }
@@ -76,7 +76,7 @@ a{
   border-radius: 50%;
   background-color: #1962EC;
   transform: translateX(-327%);
-  margin-top: 13px;
+  margin-top: 15px;
   transition: 0.5s;
   z-index: -1;
 }
@@ -86,13 +86,13 @@ a{
   content: "";
   position: absolute;
   width: 900px;
-  height: 110px;
+  height: 120px;
   top: -40px;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 2px 0px 2px 1px rgba(0, 0, 0, 0.3);
   z-index: -1;
   border-bottom-left-radius: 99px;
-  transform: translateX(10.05%);
+  transform: translateX(10.6%);
   transition: 0.5s;
 }
 
@@ -101,9 +101,9 @@ a{
   content: "";
   position: absolute;
   width: 5000%;
-  height: 110px;
+  height: 120px;
   top: -40px;
-  transform: translateX(-99.82%);
+  transform: translateX(-99.94%);
   background-color: rgba(255, 255, 255, 1);
   box-shadow: -2px 0px 2px 1px rgba(0, 0, 0, 0.3);
   z-index: -1;
@@ -114,7 +114,7 @@ a{
 /* Luna arriba del circulo */
 .luna{ 
   position: absolute;
-  top: 1px;
+  top: 2px;
   width: 119.9px;
   height: 118px;
   -moz-border-radius: 50%;
@@ -124,7 +124,7 @@ a{
   -webkit-box-shadow: 30px 10px 0 rgba(255, 255, 255, 1);
   box-shadow: -2px -66px 0px 10px rgba(255, 255, 255, 1);
   z-index: 10;
-  transform: translateX(-272%);
+  transform: translateX(-275%);
   transition: 0.5s;
 }
 
@@ -136,9 +136,7 @@ a{
   cursor: pointer;
   list-style: none;
   text-decoration: none;
-  margin-left: -20px;
-  transform: translateX(0px);
-  right: 0px;
+  margin-left: -24px;
   transition: 0.5s;
 }
 
@@ -153,10 +151,10 @@ a{
 .nav-container .active::after{
   content: "";
   position: absolute;
-  top: -19px;
-  width: 115px;
-  height: 115px;
-  left: -10px;
+  top: -33px;
+  width: 125px;
+  height: 125px;
+  left: -30px;
   background-color: transparent;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
@@ -165,8 +163,7 @@ a{
 
 /* Circulo celeste */
 .nav-container .active{
-  transform: translateY(32px) !important;
-  right: 0px;
+  transform: translateY(35px);
   transition: 0.5s;
 }
 
@@ -186,7 +183,7 @@ a{
 }
 
 .txtNosotros{
-  margin-top: 5px;
+  margin-top: 3px;
 }
 
 .body-foto{
@@ -209,11 +206,11 @@ a:nth-child(1).active .txtInicio{
 } 
 
 a:nth-child(1).active ~ .circulo{
-  transform: translateX(-327%);
+  transform: translateX(-320%);
 }
 
 a:nth-child(1).active ~ .luna{
-  transform: translateX(-272.4%);
+  transform: translateX(-267%);
 }
 
 a:nth-child(2).active .txtNosotros{
@@ -233,11 +230,11 @@ a:nth-child(3).active .txtCursos{
 } 
 
 a:nth-child(3).active ~ .circulo{
-  transform: translateX(-20%);
+  transform: translateX(-22%);
 }
 
 a:nth-child(3).active ~ .luna{
-  transform: translateX(-16.9%);
+  transform: translateX(-18.6%);
 }
 
 a:nth-child(4).active .txtTalleres{
@@ -245,11 +242,11 @@ a:nth-child(4).active .txtTalleres{
 } 
 
 a:nth-child(4).active ~ .circulo{
-  transform: translateX(130%);
+  transform: translateX(123%);
 }
 
 a:nth-child(4).active ~ .luna{
-  transform: translateX(108.3%);
+  transform: translateX(102.4%);
 }
 
 a:nth-child(5).active .txtBiblioteca{
@@ -257,24 +254,118 @@ a:nth-child(5).active .txtBiblioteca{
 } 
 
 a:nth-child(5).active ~ .circulo{
-  transform: translateX(290%);
+  transform: translateX(280%);
 }
 
 a:nth-child(5).active ~ .luna{
-  transform: translateX(241.5%);
+  transform: translateX(233.5%);
 }
 
 
-@media screen and (min-width: 200px) and (max-width: 752px){
-  .nav-container{
-      width: 100%;
-      margin-right: 0;
-  }
-}
 
 @media screen and (max-width:750px) and (min-width: 900px){
   .nav-container{
       width: 100%;
       gap: 17%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* Estilos para celulares */
+
+  .header-container{
+    height: 50px;
+    left: 0;
+  }
+
+  .logo-nosotros, .logo-carreras, .logo-inicio, .logo-cursos, .logo-talleres{
+    width: 15px;
+    height: 15px;
+  }
+
+
+  .logo-container{
+    align-items: center;
+    height: 80px;
+    transform: translateX(-15px);
+  }
+
+  .logo-zaitex{
+    width: 40px;
+  }
+
+  .circulo{
+    width: 70px;
+    height: 70px;
+  }
+  
+  .circulo::after{
+    height: 90px;
+    transform: translateX(6.8%);
+  }
+  
+  .luna{
+    display: none;
+  }
+
+  
+
+  .nav-container{
+    width: 50%;
+    margin-right: 110px;
+    gap: 55px;
+  }
+
+  .nav-container .home-btn , .about-btn, .courses-btn, .talleres-btn , .biblioteca-btn{
+    font-size: 11px;
+  }
+
+  .txtCursos, .txtBiblioteca, .txtTalleres{
+    margin-top: 1.7px;
+  }
+
+  .nav-container .about-btn{
+    margin-top: 0px;
+    top: -6px;
+  }
+
+  a:nth-child(1).active ~ .circulo{
+    transform: translateX(-252%);
+  }
+  
+  a:nth-child(1).active ~ .luna{
+    transform: translateX(-272.4%);
+  }
+
+  a:nth-child(2).active ~ .circulo{
+    transform: translateX(-146%);
+  }
+  
+  a:nth-child(2).active ~ .luna{
+    transform: translateX(-146.9%);
+  }
+
+  a:nth-child(3).active ~ .circulo{
+    transform: translateX(-40%);
+  }
+  
+  a:nth-child(3).active ~ .luna{
+    transform: translateX(-17.9%);
+  }
+
+  a:nth-child(4).active ~ .circulo{
+    transform: translateX(58%);
+  }
+  
+  a:nth-child(4).active ~ .luna{
+    transform: translateX(108.3%);
+  }
+
+  a:nth-child(5).active ~ .circulo{
+    transform: translateX(185%);
+  }
+  
+  a:nth-child(5).active ~ .luna{
+    transform: translateX(241.5%);
   }
 }

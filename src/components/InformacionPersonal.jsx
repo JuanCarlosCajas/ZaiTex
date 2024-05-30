@@ -1,16 +1,21 @@
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import '../css/Login/DatosUsuarioLogin.css'
 import { useState } from 'react'
+import { actualizarUser } from '../redux/slice'
+import { actualizarDatos } from '../backend/useToken'
+import { actualizarEdicion } from '../redux/edicionSlice'
 
 
 export const InformacionPersonal = () => {
 
     const user = useSelector(state => state.user)
+    const edicion = useSelector(state => state.edicion)
+
+    const dispatch = useDispatch()
+
 
     const [modoEdicion , setModoEdicion] = useState(false)
     const [readOnly, setReadOnly] = useState(true)
-
-    const [nombreCompleto, setNombreCompleto] = useState(user.nombre_alumno + " " + user.apellido_alumno)
 
     const BotonEditar = () => {
         const EditarInformacion = () => {
@@ -38,12 +43,29 @@ export const InformacionPersonal = () => {
             $inputContacto.value = user.contacto
 
             setReadOnly(!readOnly)
-            console.log(prueba)
+        }
+
+        const GuardarCambios = () => {
+            const $inputSexo = document.getElementById("sexo")
+            const $inputEmail = document.getElementById("email")
+            const $inputContacto = document.getElementById("contacto")
+
+            const cambios = { 
+                gmail_recuperacion : $inputEmail.value,
+                sexo: $inputSexo.value,
+                contacto: $inputContacto.value
+            }
+
+            dispatch(actualizarUser(cambios))
+            setModoEdicion(!modoEdicion)
+            setReadOnly(!readOnly)
+
+            actualizarDatos(user.codigo_alumno, cambios.gmail_recuperacion, cambios.sexo, cambios.contacto)
         }
 
         return(
             <div className='botones-editar'>
-                <button type="button" className='guardar-btn'>Guardar</button>
+                <button type="button" className='guardar-btn' onClick={GuardarCambios}>Guardar</button>
                 <button type="button" className='cancelar-btn' onClick={Cancelar}>Cancelar</button>
             </div>
         )

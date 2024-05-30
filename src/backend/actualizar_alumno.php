@@ -1,19 +1,16 @@
 <?php
-
+header("Access-Control-Allow-Origin: *");
 require('conexion.php');
 
 // Parámetros para actualizar el alumno
-$codigo_alumno = $_POST["codigo"];
-$nombre_alumno = $_POST["nombre"];
-$apellido_alumno = $_POST["apellido"];
-$foto_alumno = $_POST["foto"];
-$dni_alumno = $_POST["dni"];
-$gmail_recuperacion = $_POST["email"];
-$contrasena = $_POST["contrasena"];
+$codigo_alumno = $_POST["codigo_alumno"];
+$gmail_recuperacion = $_POST["gmail_recuperacion"];
+$sexo = $_POST["sexo"];
+$contacto = $_POST["contacto"];
 
 // Preparar la llamada al procedimiento almacenado
-$stmt = $conn->prepare("CALL updateAlumno(?, ?, ?, ?, ?, ?, ?)");
-$stmt->bind_param("sssssss", $codigo_alumno, $nombre_alumno, $apellido_alumno, $foto_alumno, $dni_alumno, $gmail_recuperacion, $contrasena);
+$stmt = $conn->prepare("CALL ActualizarAlumno(?, ?, ?, ?)");
+$stmt->bind_param("ssss", $codigo_alumno, $gmail_recuperacion, $sexo, $contacto);
 
 // Ejecutar la llamada
 if ($stmt->execute()) {
